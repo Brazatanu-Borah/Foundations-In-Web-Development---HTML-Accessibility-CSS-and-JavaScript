@@ -1,0 +1,20 @@
+  01. Introduction
+  02. How The Web Works
+  03. Intro to VSCode
+  04. Core HTML
+  05. Web Accessibility
+  06. Core CSS
+  07. Debugging HTML and CSS
+  08. Deploying a Website
+  09. Practice Project #1
+  10. Core JavaScript
+  11. Debugging JavaScript
+  12. JavaScript in The DOM
+  13. Advanced HTML
+  14. Advanced CSS
+  15. Advanced JavaScript
+  16. External JavaScript Libraries
+  17. Web Tools
+  18. Practice Project #2
+  19. What to Learn Next
+  20. Conclusion
