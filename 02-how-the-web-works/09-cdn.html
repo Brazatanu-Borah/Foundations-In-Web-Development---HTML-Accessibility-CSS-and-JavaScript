@@ -1,0 +1,20 @@
+CDN
+  Content Delivery Network
+
+  Copies of files are stored on various locations (cdn servers) and kept updated regularly
+  Clients will get the file from the closest cdn location to them
+
+  Only keep the most important files on local hosting company and access all the rest from the cdn locations
+
+  Every cdn file will have a unique url
+  For eg : jquery cdn urls from different CDN service providers
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+Once retrieved the cdn file will be cached on to the client
+  Cached version will be used until we need the updated version
+  Then we need to remove the cached version, to store the newer version
