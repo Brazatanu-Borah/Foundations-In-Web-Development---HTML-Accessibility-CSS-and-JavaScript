@@ -1,0 +1,76 @@
+Very fast (by default)
+Extensible
+Lots of plugins (easy to install and uninstall)
+
+
+|Explorer
+  - file/folder tree
+  - open the 'folder' instead of individual files
+  - creates a 'WORKSPACE' at the root of the folder
+  - we have icons to quickly create files amd folders, refresh the file tree and also search for files and folders
+             📃 📁 🔃 ☰
+
+
+|Search
+  - search for any string in files and folders in that WORKSPACE
+  ctrl + shift + f
+
+
+|Source Control
+  - not used much
+  - best use the inbuilt terminal with cli commands
+
+
+|Run and Debug
+  - we will do more debugging in browser
+  - this option is more for JavaScript debugging (along with console tab)
+  - launch and run our app for debugging (launch.json)
+  - f5
+
+
+|Extensions
+  - lots to customize our personal code editor
+
+    >> C# dev will use extensions customized for C# development
+    >> Java dev will use extensions customized for Java development
+
+  - tweak existing VS Code settings
+  - add new functionality to VS Code
+
+  - some come from official MicroSoft Corp. 'official' others from their respective plugin authors
+
+  - try to do the task without the help from extensions first, only then install extensions 
+    >> this helps us to debug extensions if they cause problems, or tweak the settings in json object
+    .. Get The Flow w/p Extensions first!!
+    
+  - avoid 'NIGHTLY' versions as a beginner 
+
+
+
+|My Profile🙂
+  - sync many diff VS Code installations across many devices
+  - sign in to cloud accounts
+
+
+|Settings (most important)
+  - manually customize VS Code to the fullest
+
+    Command Pallette (quick access to all internal settings)
+      ctrl + shift + p
+      - alphabetical list of all settings
+      - recents first
+    -------------------------------
+    Profile
+    Settings
+    Extensions
+    Keyboard Shortcuts
+    ...
+
+
+Others
+  ctrl + ~ >> toggles built in terminal
+    >> opens the WORKSPACE (project root)
+  >> not using the GUI
+  >> automating many common tasks using the terminal commands
+
+
