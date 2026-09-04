@@ -1,0 +1,48 @@
+Local IP Address
+  192.168.0.54 [ipv4]; also ipv6
+  - 4 section numbers separated by .
+
+  >> Every device will have a 'local' ip address, but a main 'global' ip address (modem/router);    
+      >> changes the last 2 digits (local ip address) and every one of these 'nodes' [devices connected my home network]
+        phone       : 192.168.0.55
+        computer    : 192.168.0.56
+        doorbell    : 192.168.0.57
+
+        (all individual devices of my home network talks to one another as
+         people in the same room talks to one another)
+         - they can 'see each other' in that room
+
+    OUTSIDE COMM >> global ip add >> local ip address
+  
+
+Global IP Address
+  >> Every device connected to the INTERNET will have unique ip address
+  >> My home network address will talk to other devices on the internet using the global ip address
+
+  - also every public device connected to internet has a global ip address
+
+  Website also has an ip address (every domain name will have a gloabl ip address)
+
+
+    Dynamic IP Address
+      >> for home/personal networks
+      >> nobody from the 'internet' requests into my pc and files
+      >> my pc goes thru my global ip address and out to the internet
+      >> my personal global ip address keeps changing, not a big deal (because nobody is looking for my pc files, my address is not important)
+
+
+    Static IP Address 
+      >> For every publicly available website/device
+      >> everybody will call-in to this webpage; eg google.com
+      >> must be always fixed, because many people will be tryiung to access this website from all diff locations
+      >> it cannot change
+
+      - there are workarounds for this fixed address to make dynamic
+
+
+PING
+  - we are asking if there is someone at this partcular ip address
+  - if there is a website/device at that ip address, it will ping back
+  - not every website allows pinging❌
+
+      $ ping google.com

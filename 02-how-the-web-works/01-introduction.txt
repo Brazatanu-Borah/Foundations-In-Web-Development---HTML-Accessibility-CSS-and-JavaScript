@@ -1,0 +1,7 @@
+User Requesting A Website
+till...
+Receiving the Website
+
+This is complete functioning 'SYSTEM' which contains all the pieces of the puzzle
+
+The full 'technical' process of building a website, hosting it online till a visitor requesting to see the site and finally the rendered webpage on the visitors device

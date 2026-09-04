@@ -1,0 +1,23 @@
+WEB SERVER
+-----------
+  [a machine that serves our website files, when we request it to]
+
+  GRABs requested files (html, css, js, images) >> SENDs them to user (as a package)
+
+  1. every file on the server has a specific/UNIQUE address/url (generally not shown)
+  2. files on our hard drive shows the exact location of the file (C:\Demo\test.html)
+  3. simple asking for 'test.com' will make the server find the file wherever it is located in the server and send it to us
+
+    >> Web Server sends only the files requested (also those that are authorized for that user) [not every file in the website]
+      - web server has security protocols that restricts the users access to all files as a whole
+      - only specific requests (with authorization) will allow the web server to send files to the users system
+
+
+  B. Types of web servers:
+      Apache (built into Linux OS)
+        - cheap, mostly used in shared hosts
+      NGINX  (built into Linux OS)
+        - 
+      IIS    (built into Windows 8, 10, 11)
+        - windows web server
+        - we can install it on our dev machine and convert it to a web server

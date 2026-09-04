@@ -1,0 +1,25 @@
+MAIN/TRADITIONAL website files : -
+  html          (layout; definition files)
+  css           (look; definition files)
+  javascript    (logic; interaction files)
+
+  - these are files that we as developer will create by coding (html css and javascript)
+
+
+OTHER website files : -
+  raster image files
+  vector image files
+
+  audio files
+  video files
+  3D files
+  font files
+
+  json files
+  plain text data files
+
+
+
+👆 These files must be stored somewhere, that a site visitor can easily access them.
+  ❌ Definitely not on our personal computers or development environments
+            NEXT ➡...
