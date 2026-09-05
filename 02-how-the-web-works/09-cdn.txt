@@ -1,0 +1,40 @@
+CDN
+=====
+  Content Delivery Network
+  - less load on our main server
+  - faster deilvery of comminly used files on all websites
+
+  The Web is a massive place. Just hosting a website/file doesnot mean it will instaneaously appear on my machine and also someone sitting on the opposite end of the world, it takes time. Depens on where those website files are sored, and how close that location is (pysically) to the user that is requesting that webapge/web resource
+
+  📃(Website)  ----- 100km ----- 🙂 Me                    
+  📃(Website)  --------------------- 10000km ---------------------- 👮‍♀️Visitor    
+
+  Information on the Internet travles at light speed (quite fast)               
+    - but internet infra has many breaks at that length (repeaters, wire jpinings, turns around restrictewd areas)
+    - we get noticeable delay in website files being sent from the server to the user computer
+
+  Hence copies of files are stored on various locations (cdn servers) and kept updated regularly
+  Clients will get the file from the closest cdn location to them
+
+  Only keep the most important files on local hosting company and access all the rest from the cdn locations
+    - my hosting (html, css, js, images) - less load on primary host (slow, as they will come from exact location)
+    - cdn (extra libraiers, icon libraies etc) - faast (will be fetched from the nearest CDN to the user)
+
+  Every cdn file will have a unique url
+  For eg : These are jquery cdn urls from different CDN service providers -
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+
+    Now the user(s) will get the jquery file from the CDN that is nearest to that site visitor
+
+
+Once retrieved the cdn file will be cached on to the client (no need to dowenload it again unitill fresh copy is needed)
+------------------------------------------------------------
+  Cached version will be used until we need the updated version
+    - is good for normal users, but for use when developing the site, we may need to update the version constantly
+    > Then we need to remove the cached version, to store the newer version to load fresh

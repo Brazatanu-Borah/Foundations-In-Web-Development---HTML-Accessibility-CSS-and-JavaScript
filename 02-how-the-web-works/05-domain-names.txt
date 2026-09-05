@@ -1,0 +1,30 @@
+
+'test.com' - domain name
+  - the name and the extension
+
+  ICANN (Internet Corporation for Assigned Names and Numbers)
+    - holds the list of all possible registered domain names
+    - checks for available domain names, that we can have it
+    - some of these tasks are assigned to companies called 'registrars'
+    
+  Domain Name Registrar (company) [middle man]
+  --------------------------------------------
+    - checks if a domain name is available in the ICANN domain name list
+    - if not available, allots it to the customer and maintains it thereafter
+
+    We have to register our domain name thru the DNR company
+      - it gets added to the list of domain names in ICANN, and is unavaibale for others to take
+
+    >> costs can vary
+    >> 1 year validity (can be pre ordered for multiple years)
+    >> can be renewed
+    >> the domain name becomes ours
+      - the job of the DNR is to just give the information of our purchase to ICANN
+      >> they have more jobs/services to offer to us (pay them more)
+
+    If DNR is changing policies, we can transfer our domain name from DNR comp 1 to DNR comp 2
+      >> Our domain name remains unchanged
+
+
+    ✅Lets say we have purchased a domain name 'test.com'
+        ➡ NEXT how to connect this domain name to our website

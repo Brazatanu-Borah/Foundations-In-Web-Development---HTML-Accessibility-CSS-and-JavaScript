@@ -1,0 +1,55 @@
+COMPUTER TALK THROUGH PROTOCOALS (how they communicate)
+  HTTP protocol (most common protocal for computers to talk to each other on the Internet)
+  FTP protocol
+
+
+PORTS : [lanes through which computers communicate]
+===================================================
+  1 computer ~ 65000 ports
+  - different ports are reserved for different types of communication
+  - my computer constantly talks to different things on the internet
+
+    80  - http        [normal web communication]
+    443 - https (ssl) [secured web communication]
+
+              21  - FTP another example
+
+    "Communicating over port 80"
+
+We can allot different ports to different types of communication, if that port is free
+  - if we have 2 websites running then we have to allocate diff ports for them to talk to the internet
+
+Port 80 is open highway, anything can see what that content is, who is asking for that info, not data intensive website. 
+Modern websites are defaulted to port 443, most secure. Like someone requested a login to a service, medical info, password The entire cobverrsation is encryoted
+  
+  Machine 1     <<--------------------------------------------------->>    Machine 2
+    🔐          [nobody can see what is inside the ebcryoted message]    🔐🔓
+
+
+  - like walking with a briefcase from building 1 to building 2. Nobody in the area can see what is inside the briefcase
+
+    SSL - encrypted info [end to end security]
+     - Keys are available at only the source-location and destination-location
+     - data remains unlocked in both locations, but not during the journey
+     - my computer and the server will have the info open, but will remian encrypted during the journey
+
+     🔥ATACKS can still happen along the way. Malicious server can pretend to be the destination and come in betwenn my pc and my actual server from wjhich i am requestesting or sending info, and as the info gets uynlocked at servers, the fake server may get access to the encrypoted info i have
+        'Man Of Middle' attack
+
+      - Web server needs to be protected, no junk or malware, and lots of security protocoal. but we amy install malwares in our PC, who is connecting to that server. Someone who is observing the traffic may wait in out pc, for it ti retrieve the briefase from the server and then have access to all that info
+
+  Its mandatory to have SSL by default,google needs it or will degrade our site in rankings
+
+      http://test.com - will talk through the port 80 (open to all, unsecured)
+      https://test.com - will talk through the port 443 (open to none, secured)
+
+        > we normally dont see these default port numbers on our website address
+        > but when we will develop and test our site on local machine, we will see other port numbers, (non standard prts, ports that are available)
+
+        >> We can change this default behavior though
+          https://test.com:1443 - this will force the communication to happen through port 1443
+        >> Web server handles this whole allocating ports to communication
+        
+        👆Web Server does a lot of things
+
+  

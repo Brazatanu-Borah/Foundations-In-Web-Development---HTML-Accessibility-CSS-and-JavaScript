@@ -1,0 +1,55 @@
+BROWSER (Very complicated piece of software)
+--------
+  Takes all files (received from the server) and converts into web pages - html, css, js >> webpages
+
+    DOM and CSSOM  [Layout Engine]
+    JS             [Runtime Engine]
+
+  Abides by the W3C Standards
+    which browser supports the html tags, css properties, js apis features and which doesn't.
+    different browser implements standards in different way
+      HTML HTML5, CSS, CSS3 etc
+      - browser engine must learn all bout the standards
+      - some may miss one or two features; one browser will support this standard some will support 
+      these; different browsers implement these stnadrds differently
+        WHAT THEY RENDER AND WHAT THEY DON'T
+      - smae website may miss key pieces in some browsers and fuklly imple,ent them in another
+
+      - 👆 modern browsers are quite standards compliant and very little differences
+
+    speed at which the web page loads (how fast the browser implements the standards)
+    render times are different for different browsers (render == reading the code and finally creating them viewable webpage fully); because of the engine underneath
+    - hence same website will feel fast or slow depending on the browser that is rendering the webpage, ewven in the same internet speed
+
+
+  https://www.caniuse.com
+    - we can see which feayures, standrds are implemented in which browsers and to what extent.
+      > globally or locally
+
+
+  🔥👆CHECK WEBSITES ON MODERN BROWSER VERSIONS (back by 5 years)
+      * Chrome
+      * Edge
+      * Safari
+      * Firefox
+      * Opera
+
+      - at diff internet speed
+      - at diff screen sizes
+      - at diff OS
+
+      Safari (it's still lagging in specific standards, when compared to other browser)
+      - the new IE😅
+
+      Modern browsers will update autoimatically, in the backgeound
+      As new features are rolled out, they get added to our broesers more often
+
+
+  SOME INTERNAL MACHINES AND NETWORK IN SOME COMPANIES MAY RUN VERY OLD VERSIONS OF BROWSERS
+  ------------------------------------------------------------------------------------------
+    - to run proprietary softwares and web apps
+    - to update the browser they may have to upgrade the whole system, which sometimes may not be feasible!!
+    - caniuse.com also helps in checking the verison of old browsrs that will suppor thte standards
+    - these companies may not allow evergreen browaer features, update is not allowed. Hence we pamy have to check which browser the website will finally run on before building it!!
+
+    jQuery was designed to combat browser differences, but now not that much

@@ -1,0 +1,39 @@
+DNS
+====
+  Domain Name System 
+  >> [Phone Book of the web / Context List of the Web]
+  [IP Address] ... mapped to (by DNS) ... [Domain Name]
+
+  82.164.25 <<------------DNS------------->> test.com
+
+  >> just has the list of domain names and their corresponding IP addresses
+  >> these pairs are called 'records'
+
+
+DNS Server is for
+  Websites      : A Record
+  Email address : MX Record
+  >> other records called C name records
+
+  👆 Hence, all public facing websites/devices/services must have a static IP address. if it keeps changing, we have keep updating our DNS record constantly
+
+
+  If IP address changes, we must change the record in the DNS
+    Most web service provides handles this efficiently with something called DDNS (Dynamic DNS)
+
+    82.164.25 <<------------DDNS------------>> test.com
+
+    Wen the server behind the ip address is our own PC
+
+    When domain names changes , although IP address stays fixed
+
+
+PING
+  google.com - first this thing goes to DNS
+  DNS found the ip address associated with this ip address and gave it back to our terminal
+  terminal again sent request to the specific ip address
+  the server behind the ip address received the 'knock'
+  the server then sent back the ping with a response to the terminal that sent the request (it remembers the route)
+
+
+Hosting Companies Have 1/2 IP addresses only, but may have 50 diff websites. They have internal mechanisms to find out which webpage to serve to which user

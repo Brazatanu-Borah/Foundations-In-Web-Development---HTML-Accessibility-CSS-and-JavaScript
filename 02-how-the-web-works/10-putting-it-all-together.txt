@@ -1,0 +1,39 @@
+HTML, CSS and JS Website
+Web Server
+
+Serve it on
+  HTTP:80
+  HTTPs:443
+
+IP address
+
+Buy Domain name
+  test.com
+  - put it on our web server
+
+Some files are linked to CDN
+
+Map domain name to ip address - DNS (A Record)
+
+
+
+================================= SITE VISITOR
+https://www.test.com
+  - goes to DNS 9though gateway
+  - retreives the ip address
+  - browser then send the request once again now to exact adddress(ipaddress)
+  - server at that ip adress sends tback the files
+
+  - Some file will be retrieved from CDN urls
+    - same process (dns lookup, ip address to that cdn link)
+
+  Browser
+    - collects files from server and cdns
+    - then assembles all those code and images and renders our webpage (according to the instructions it gets in those code)
+
+
+
+
+This is quite complex process
+But the process at every step/stage is quite simple
+Also there are so many acronyms to go with it😅, makes it seem compicated
