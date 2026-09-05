@@ -1,5 +1,5 @@
 Live Server
------------
+===========
   - creates a local web server at the current root folder thatis open in VS Code (WORKSPACE becomes the Server)
   - all files will be served from this folder (when we request them from the browser)
 
