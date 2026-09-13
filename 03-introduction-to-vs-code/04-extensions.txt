@@ -1,17 +1,28 @@
-Live Server
-===========
+Live Server (MOST IMPORTANT EXTENSION FOR BEGINNERS)
+----------------------------------------------------
   - creates a local web server at the current root folder thatis open in VS Code (WORKSPACE becomes the Server)
   - all files will be served from this folder (when we request them from the browser)
 
   - continuously makes changes to the live rendered page, if we make changes to the code in VS Code
     >> as if we are editing the source files in some hosting that we purchased
 
+    Otherwise we have to
+      - edit
+      - save
+      - refresh in browser
+
+    Quickly see changes in website as we make changes in our code (almost real time)
+
   - uses 'http://localhost' or http://127.0.0.1:5500/ as the server port
+    port 5500 (out of all ~ 65,000 available ports)
 
   - 'Go Live' button on bottom right corner to toggle the live connection to the browser
 
 
 
-As we learn more topics and concepts we will add extensions then, when it makes sense!!
+  ======================================================================================
+  As we learn more topics and concepts we will add extensions then, when it makes sense!!
+    - our overall expertise with VSCode will also increase as we keep using it more often
+    - 'tool' to help us code and develop modern good websites
 
-  - when we learn about basics sass and less we will install an extension to compile the .scss and .less files to .css files
+    - when we learn about basics sass and less we will install an extension to compile the .scss and .less files to .css files

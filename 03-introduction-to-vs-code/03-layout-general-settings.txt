@@ -4,16 +4,20 @@ Lots of plugins (easy to install and uninstall)
 
 
 |Explorer
-  - file/folder tree
-  - open the 'folder' instead of individual files
+  - file/folder tree to see all our project files and folders
+  - always open the 'project folder' instead of individual files, evenif ti has only one file
   - creates a 'WORKSPACE' at the root of the folder
-  - we have icons to quickly create files amd folders, refresh the file tree and also search for files and folders
+  - we can add and remove files in the actual hard drive in real time just from the open folder from within VSCode itself
+  - we can have tabs to open multiple files open in the same time
+  - we have icons to quickly create files amd folders, refresh the file tree and also search for files and folders inside that project folder
              📃 📁 🔃 ☰
 
 
 |Search
   - search for any string in files and folders in that WORKSPACE
   ctrl + shift + f
+  - search and replace that things inside all files in that folder
+     replace replace all
 
 
 |Source Control
@@ -22,7 +26,7 @@ Lots of plugins (easy to install and uninstall)
 
 
 |Run and Debug
-  - we will do more debugging in browser
+  - we will do more debugging in browser (for html and css, better options)
   - this option is more for JavaScript debugging (along with console tab)
   - launch and run our app for debugging (launch.json)
   - f5
@@ -31,25 +35,32 @@ Lots of plugins (easy to install and uninstall)
 |Extensions
   - lots to customize our personal code editor
 
-    >> C# dev will use extensions customized for C# development
-    >> Java dev will use extensions customized for Java development
+        >> C# dev will use extensions customized for C# development
+        >> Java dev will use extensions customized for Java development
+
+        Beginner devs will need less extensions
 
   - tweak existing VS Code settings
   - add new functionality to VS Code
 
   - some come from official MicroSoft Corp. 'official' others from their respective plugin authors
+      >> we have to be careful when selecting extensions
 
-  - try to do the task without the help from extensions first, only then install extensions 
+  - more extensions will slow down VSCode
+
+  - TRY to do the task without the help from extensions first, only then install extensions 
     >> this helps us to debug extensions if they cause problems, or tweak the settings in json object
-    .. Get The Flow w/p Extensions first!!
+    .. Get The Flow w/o Extensions first!!
+
+    Then our natural coding will speed up with extensions
     
-  - avoid 'NIGHTLY' versions as a beginner 
+  - avoid 'NIGHTLY' versions of an extension as a beginner 
 
 
 
 |My Profile🙂
   - sync many diff VS Code installations across many devices
-  - sign in to cloud accounts
+  - sign in to cloud account and backup settings (and everything else)
 
 
 |Settings (most important)
@@ -58,19 +69,29 @@ Lots of plugins (easy to install and uninstall)
     Command Pallette (quick access to all internal settings)
       ctrl + shift + p
       - alphabetical list of all settings
-      - recents first
+      - recently accessed will appear on top
+
     -------------------------------
     Profile
     Settings
     Extensions
     Keyboard Shortcuts
-    ...
+    Snippets
+    Tasks
+    Themes
+    -------------------------------
+    Backup and Sync Settings...
 
 
-Others
+Others [TERMINAL INSIDE VSCODE]
+===============================
+
   ctrl + ~ >> toggles built in terminal
-    >> opens the WORKSPACE (project root)
+    >> opens inside the WORKSPACE (project root)
   >> not using the GUI
   >> automating many common tasks using the terminal commands
+  >> git, devops, ci/cd
 
+  tab size
 
+  key bindings

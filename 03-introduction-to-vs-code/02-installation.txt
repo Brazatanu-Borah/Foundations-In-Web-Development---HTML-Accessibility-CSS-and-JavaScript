@@ -5,7 +5,8 @@ Visual Studio Code
 https://code.visualstudio.com/
 
 
-Open Source Text Editor [for HTML, CSS & JS Coding] most popular
+Open Source Text Editor
+  [for HTML, CSS & JS Coding] most popular
   Many more languages are also supported in this editor
     - Java
     - Docker
@@ -13,26 +14,31 @@ Open Source Text Editor [for HTML, CSS & JS Coding] most popular
 
   Text Editor (Fundamentally)
     - designed to edit text
-    - we can add plugins to help us write text
+    - but we can add plugins to help us write text
     - also supports many languages and technologies
 
   'Code' is the nickname for this editor
     Set it up to open context menu over files and directory
     Add to path
-      'Code .' will open VS Code at that folder
+      - 'Code .' in the bash terminal, will open VS Code at that folder/location
 
-  👆VS Code is built with Electron.js
-    - Electron allows to create a Web App that can run as a Desktop App
-    - Also is responsive to screen size
-    - Hence all web/browser control / shortcuts will work mostly the zoom
-      >> [ctrl +] will zoom in
-      >> [ctrl -] will zoom out
+    Don't register code to open supported file (with file extensions)
+      - do this manually (for only these 5 types of files, for the rest use other apps)
 
 
-      Start                                                Customize
-      Recent                                               Learn
-      Help
+👆VS Code is built with Electron.js
+------------------------------------
+  - Electron allows to create a Web App that can also run as/like a Desktop App
+  - Also is adaptive to screen sizes and is snappy!!
+  - Hence all web/browser control / shortcuts will work mostly the zoom
+    >> [ctrl +] will zoom in
+    >> [ctrl -] will zoom out
 
-          Welcome screen is very useful for beginner coders
+
+    Start                                                Customize (theme, color, setings...)
+    Recent                                               Learn (editor, keybindings...)
+    Help
+
+        Welcome screen is very useful for beginner coders
 
   
