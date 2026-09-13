@@ -1,25 +1,30 @@
 BROWSER (Very complicated piece of software)
 --------
-  Takes all files (received from the server) and converts into web pages - html, css, js >> webpages
+  Takes all files (received from the server) and 'converts' into web pages - html, css, js >> webpages
+    'converts' - reads, parses and displayed the content as instructed by the code in these files
 
     DOM and CSSOM  [Layout Engine]
     JS             [Runtime Engine]
 
   Abides by the W3C Standards
-    which browser supports the html tags, css properties, js apis features and which doesn't.
-    different browser implements standards in different way
+  ---------------------------
+    >> which browser supports the html tags, css properties, js apis features and which doesn't.
+    >> different browser implements standards in different way
       HTML HTML5, CSS, CSS3 etc
-      - browser engine must learn all bout the standards
-      - some may miss one or two features; one browser will support this standard some will support 
-      these; different browsers implement these stnadrds differently
-        WHAT THEY RENDER AND WHAT THEY DON'T
+      - browser engine must learn all about the standards
+      - some may miss one or two features; one browser will support this standard, and another will support these; different browsers implement these stnadrds differently
+        WHAT THEY RENDER AND WHAT THEY DON'T, AT WHAT SPEED
       - smae website may miss key pieces in some browsers and fuklly imple,ent them in another
+      - 100% standards is never implemented by any browsers
 
       - 👆 modern browsers are quite standards compliant and very little differences
+        >> bad , less competition
 
     speed at which the web page loads (how fast the browser implements the standards)
     render times are different for different browsers (render == reading the code and finally creating them viewable webpage fully); because of the engine underneath
     - hence same website will feel fast or slow depending on the browser that is rendering the webpage, ewven in the same internet speed
+
+  All these different variables combined will finally determine how our website will be experienced by our site visitors
 
 
   https://www.caniuse.com
@@ -41,15 +46,18 @@ BROWSER (Very complicated piece of software)
       Safari (it's still lagging in specific standards, when compared to other browser)
       - the new IE😅
 
-      Modern browsers will update autoimatically, in the backgeound
-      As new features are rolled out, they get added to our broesers more often
+      Modern browsers will update automatically, in the background [EVERGREEN BROWSERS]
+      As new features are rolled out, they get added to our browsers more often
 
 
-  SOME INTERNAL MACHINES AND NETWORK IN SOME COMPANIES MAY RUN VERY OLD VERSIONS OF BROWSERS
+  SOME INTERNAL MACHINES AND INTERNAL NETWORK IN SOME COMPANIES MAY RUN VERY OLD VERSIONS OF BROWSERS
   ------------------------------------------------------------------------------------------
     - to run proprietary softwares and web apps
     - to update the browser they may have to upgrade the whole system, which sometimes may not be feasible!!
-    - caniuse.com also helps in checking the verison of old browsrs that will suppor thte standards
-    - these companies may not allow evergreen browaer features, update is not allowed. Hence we pamy have to check which browser the website will finally run on before building it!!
+    - caniuse.com also helps in checking the verison of old browsrs that will support the new standards
+    - these companies may not allow evergreen browser features, auto update is not allowed. Hence we may have to check which browser the website will finally run on before building it!!
 
-    jQuery was designed to combat browser differences, but now not that much
+
+    Tools to manage browser differences in the earlier days
+      👆jQuery was designed to combat browser differences, but now not that much!!!
+      Different browsers supported diff standards in diff ways

@@ -2,16 +2,19 @@ CDN
 =====
   Content Delivery Network
   - less load on our main server
-  - faster deilvery of comminly used files on all websites
+  - faster deilvery of commonly used files on all websites
 
   The Web is a massive place. Just hosting a website/file doesnot mean it will instaneaously appear on my machine and also someone sitting on the opposite end of the world, it takes time. Depens on where those website files are sored, and how close that location is (pysically) to the user that is requesting that webapge/web resource
 
   📃(Website)  ----- 100km ----- 🙂 Me                    
-  📃(Website)  --------------------- 10000km ---------------------- 👮‍♀️Visitor    
+  📃(Website)  --------------------- 10000km ---------------------- 👮‍♀️ Other Site Visitor    
 
-  Information on the Internet travles at light speed (quite fast)               
-    - but internet infra has many breaks at that length (repeaters, wire jpinings, turns around restrictewd areas)
-    - we get noticeable delay in website files being sent from the server to the user computer
+  Information on the Internet travles at light speed (quite fast)      TRANSMISSION TIME         
+    - but internet infra has many breaks at that length (repeaters, wire joinings, transmissioon time dfelays, turn around restricted areas)
+    - we get noticeable delay in website files being sent from the server to the user computer, if they are apart in huge amounts (in physical distance)
+
+  We cannot shorten the actual distance btween the server and the client (site visitor)
+  We CAN take the server (a copy of the server) and place it near the site visitor
 
   Hence copies of files are stored on various locations (cdn servers) and kept updated regularly
   Clients will get the file from the closest cdn location to them
@@ -20,8 +23,11 @@ CDN
     - my hosting (html, css, js, images) - less load on primary host (slow, as they will come from exact location)
     - cdn (extra libraiers, icon libraies etc) - faast (will be fetched from the nearest CDN to the user)
 
-  Every cdn file will have a unique url
+  These spots will all contain the exxact copy of the website files, and can be accessed by someone who is nearest to that one particluar cdn
+
+  Every cdn file will have a unique url (for the exact same website file)
   For eg : These are jquery cdn urls from different CDN service providers -
+    They will serve the exact same jquery 3.7.1 file (but from diff cdn locations)
 
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
@@ -33,8 +39,22 @@ CDN
     Now the user(s) will get the jquery file from the CDN that is nearest to that site visitor
 
 
-Once retrieved the cdn file will be cached on to the client (no need to dowenload it again unitill fresh copy is needed)
-------------------------------------------------------------
+Once retrieved the cdn file will be cached on to the client (no need to dowenload it again unitill fresh copy is needed) BROWSER TASK
+-----------------------------------------------------------
   Cached version will be used until we need the updated version
+  Good for commercial websites, that just use a specific file to rener content, theny dont need the file to do development
+
+    But wehn we develop something, we may need the updated version always
     - is good for normal users, but for use when developing the site, we may need to update the version constantly
     > Then we need to remove the cached version, to store the newer version to load fresh
+
+
+MOST IMPORTANT TASKS OF A BROWSER
+---------------------------------
+  Fetching data: Requesting web pages, images, and files from a web server using internet protocols like HTTP and HTTPS.
+  Rendering content: Translating HTML, CSS, and code into visual web pages that users can see and read.
+  Executing scripts: Running client-side programming languages, primarily JavaScript, to make web pages interactive.
+  Managing navigation: Handling user inputs like clicking links, typing URLs into the address bar, and moving forward or backward through history.
+  Handling storage: Saving user data locally through cookies, local storage, cache, and password managers.
+  Ensuring security: Protecting users by blocking malicious sites, checking SSL certificates, and running secure private or incognito browsing modes.
+  Providing extensions: Supporting add-ons and plugins to add extra tools and features to the software.

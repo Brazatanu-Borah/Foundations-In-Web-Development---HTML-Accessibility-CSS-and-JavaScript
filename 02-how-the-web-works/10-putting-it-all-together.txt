@@ -1,39 +1,45 @@
-HTML, CSS and JS Website
-Web Server
+SETUP OF OUR WEBSITE  [SITE OWNER, US]
+====================
 
-Serve it on
-  HTTP:80
-  HTTPs:443
+HTML, CSS and JS Website
+Web Server (configured, permissions ect)
+  Serve it on
+    HTTP:80
+    HTTPs:443
 
 IP address
+  1.2.3.4
 
 Buy Domain name
   test.com
   - put it on our web server
 
-Some files are linked to CDN
+Some files are linked through CDN
 
 Map domain name to ip address - DNS (A Record)
+  test.com ===== 1.2.3.4
 
 
 
-================================= SITE VISITOR
+================================= SITE VISITOR   [ON CHROME BROWSER]
 https://www.test.com
-  - goes to DNS 9though gateway
-  - retreives the ip address
-  - browser then send the request once again now to exact adddress(ipaddress)
-  - server at that ip adress sends tback the files
+  - goes to DNS though gateway
+  - retrieves the ip address
+  - prepares the 443 port
+  - browser then send the request once again now to exact address (ipaddress)
+  - server at that ip address sends back the files
 
   - Some file will be retrieved from CDN urls
-    - same process (dns lookup, ip address to that cdn link)
+    - same process (dns lookup, ip address to that cdn link, receive from the cdn link)
 
   Browser
     - collects files from server and cdns
     - then assembles all those code and images and renders our webpage (according to the instructions it gets in those code)
 
 
-
-
-This is quite complex process
+This is quite complex process (as a whole)
 But the process at every step/stage is quite simple
-Also there are so many acronyms to go with it😅, makes it seem compicated
+Also there are so many acronyms to go with it😅, makes it seem complicated
+
+In the beginning it all seems quite simple
+Also website may look good and work nicely on our own development pc, but when it is setup on the actual internet, it may break

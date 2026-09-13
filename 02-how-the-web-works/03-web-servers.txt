@@ -2,14 +2,15 @@ WEB SERVER
 -----------
   [a machine that serves our website files, when we request it to]
 
-  GRABs requested files (html, css, js, images) >> SENDs them to user (as a package)
+  🔥GRABs requested files (html, css, js, images) >> SENDs them to user (as a package)🔥
 
   1. every file on the server has a specific/UNIQUE address/url (generally not shown)
-  2. files on our hard drive shows the exact location of the file (C:\Demo\test.html)
+  2. files on our hard drive shows the exact location of the file (C:\Demo\test.html), we cannot see the full address of the website
+    >> we have access to the full file system and access to each and every file of our website (less secure)
   3. simple asking for 'test.com' will make the server find the file wherever it is located in the server and send it to us
 
-    >> Web Server sends only the files requested (also those that are authorized for that user) [not every file in the website]
-      - web server has security protocols that restricts the users access to all files as a whole
+    >> ❗ Web Server sends only the files requested (also those that are authorized for that user) [not every file in the website]
+      - web server has 'SECURITY' protocols that restricts the users access to all files as a whole
       - only specific requests (with authorization) will allow the web server to send files to the users system
 
 
@@ -20,4 +21,11 @@ WEB SERVER
         - 
       IIS    (built into Windows 8, 10, 11)
         - windows web server
-        - we can install it on our dev machine and convert it to a web server
+        - we can install it on our dev machine and convert our personal computer to a web server
+
+      Docker 
+        (isolated env in which we can spin up any type of web server in any type of machine/OS)
+
+    
+  ✅LThere are millions of web servers on the Internet. How does our browser know which server it should go looking for
+        NEXT ➡... IP Address
