@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+  <!-- 
+      2 things MUST be inside head 
+        'title'
+        'favicon'
+        to make a valid/proper HTML5 document
+  -->
+
+  <head>
+
+    <!-- Main keyword for the webpage (what is this webpage all about)
+      - if we not set, the default document name will appear in the tab
+      - tells the user as well as the robots 
+    -->
+    <title>Our First Webpage</title>
+
+    <!--  favicon.ico (naming it exactly 'favicon', easy for the browser to locate)
+      ---------------
+          just place the favicon in the ROOT of our website
+          special icon in the file tree, special meaning for the browser also
+          browser will find it automatically, and pull it in our webpage
+            >> otherwise we will get a 404 error (resource not found error)
+          128 x 128 (create) then use it in 128/64/32/16 px versions
+            - size should be 2kb to 5kb in generally
+          Icons with thick lines and 2/3 colors only, blocky icons (no thin lines)
+            - favicon will be viewed in very very small places (very few pixels to render the favicon)
+          will be just glanced most of the time (must be instantly recognizable)
+          cached in most browsers (even though tiny size)
+            - repeat download of the same exact file is prevented by modern browsers by default
+
+          Everything from IE11 ands newer 
+            - we can use other file extensions "as" favicons
+            - .jpg, .png, .svg
+
+              <link rel="icon" href="BetterIcon.png" />
+
+            - not recommended (they are not favicons per se.)
+            - .ico is supported by all modern as well as older browsers
+    -->
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- <link rel="icon" href="BetterIcon.png" /> -->
+
+    <!-- first taste of >>
+          HTML attributes
+            >> special code that provides extra functionality to our elements
+          relative file path
+          self-closing tag 
+            >> no content inside the element
+            >> the element itself is the content
+            >> trailing slash before the > sign (good for use in JSX)
+
+        <linK>
+          rel - what the external resource's relation is to the HTML document it is linked to
+          href - location of the external resource
+          type - what is the file type of the linked resource
+    -->
+
+  </head>
+
+  <body>
+    This is a test.
+  </body>
+
+</html>

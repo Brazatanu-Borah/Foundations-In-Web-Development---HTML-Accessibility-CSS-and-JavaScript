@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Our First Webpage</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <h1>Hello World</h1>
+
+    <!-- 
+
+    TABULAR DATA FOR THE WEB
+    ========================
+
+    Table tag is used for displaying 'tabular data', in a grid format on the web page
+      >> Like an excel sheet; grid of rows and columns
+      >> grid helps to create boxes side by side
+      >> we can put content inside the boxes and make them sit side by side
+    Not for laying out content on the web page, or creating columns
+
+          [{{{{  PLACE CONTENT NEXT TO EACH OTHER ↔ HORIZONTALLY  }}}}]
+          Legacy use of table tags
+            >> Nested Table Soup for layouts
+            >> screen readers were confused as hell.
+
+          ❗ Table layout can be mimicked using the modern CSS Grid layout system
+
+    'table' - container tag for all the tabular data
+
+    'caption' - always the structurally 'first child element' inside the <table> tag
+                location can be changed using CSS (place at the bottom of the table)
+                (full optional)
+                👆 when we have multiple tables in one html document, caption is must to semantically separate/label each table individually
+
+    'tr'    - table row
+    'td'/'th' - table data/heading cells (creates the illusion of columns)
+                can have text/links/images/videos/bg-images as well as nested tables
+              - cells grow and shrink based on the data placed in those cells
+
+    colspan=""/rowspan="" - how many rows will span and how many columns will span
+
+
+    EMPTY DATA CELL
+    ---------------
+      <td></td> - just to make the structure correct
+
+
+    To create MORE semantic sections inside the main table (less optional)
+        'thead' - all header cells (treated as columns)
+        'tbody' - main table data
+        'tfoot' - (full optional in most cases; used for summary of reports or total/avg of some calculation)
+
+        we make the <thead> and <tfoot> fixed and <tbody> to scroll on the page, when we have data that spans 1000x of rows
+
+  -->
+
+
+    <table border="1" width="600">
+      <!-- Use CSS for styling the table and its elements -->
+
+      <caption>Company Employee Details</caption>
+
+      <thead>
+        <!-- 1 row of data inside the thead -->
+        <tr>
+          <th></th>
+          <th>Name</th>
+          <th>Email</th>
+          <th colspan="2">Address</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- 3 rows of data inside the tbody -->
+        <tr>
+          <th>1</th>
+          <!-- most important data in this row, other data is associated with this data -->
+
+          <td>John Doe</td>
+          <td>john@email.com</td>
+          <td>Brooklyn</td>
+          <td rowspan="2">New York</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <!-- most important data in this row, other data is associated with this data -->
+
+          <td>Jill Maher</td>
+          <td>jill@email.com</td>
+          <td>Buffalo</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <!-- most important data in this row, other data is associated with this data -->
+
+          <td>Mike Dane</td>
+          <td>minke@email.com</td>
+          <td>Detroit</td>
+          <td>Michigan</td>
+        </tr>
+      </tbody>
+
+      <!-- not commonly used (for summary/average of data in the table) -->
+      <tfoot>
+        <tr>
+          <th>Total: 3</th>
+          <td colspan="5">All Employees</td>
+        </tr>
+      </tfoot>
+
+    </table>
+
+  </body>
+
+</html>

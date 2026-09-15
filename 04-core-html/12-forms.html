@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Our First Webpage</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <h1>WEB FORMS & USER INPUT</h1>
+
+    <!-- 
+
+      WEB FORM & USER INPUT UI WIDGETS
+      --------------------------------
+        - collection of user interface elements where a user can enter some info on a web page.
+        - where a site user enters their data
+
+      HTML, CSS - we can only create the UI of the form
+      JavaSCript - we can work with the data
+
+      'form' - container element for all the user input controls
+          - all data that is collected will be sent as a group
+
+      'action' : where the data is sent; php/node/c# backend file's location or thank you page (similar to an anchor tag's behavior)
+
+      'method' : 'The Way' in which data is transferred [GET/[POST]]
+      
+            GET  - retrieves data from server, puts data in url and sends it away (default, if not specified)
+                 - [not secure]
+                 - data gets exposed in stops, like firewalls etc
+            POST - submits the data to the server and data is never displayed anywhere in the way 
+                - [secure]
+                - data is sent in the body of the request
+                - always encrypted
+
+      Submitting the form (clicking the submit button) will trigger the 'action' attribute
+
+      input(type=""), select and textarea are user input widgets
+
+
+
+      form, label, select, textarea, button - container tag
+      input                                 - self closing tag / non-replaced widgets
+            input type="image" - then is actively replaced element
+
+      'name' - attribute that takes the specific data of the specific input/select/textarea to the server
+
+      input - will have some browser side validation (can be changed using CSS)
+
+
+        HTML       - Form Structure
+        CSS        - Form Style & Layout
+        JavaScript - Form interactivity, validation and data capturing
+
+
+    -->
+
+
+    <h2>Form Structure 1</h2>
+
+    <form action="" method="POST">
+
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="first-name" required /> <br />
+
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" name="last-name" required /> <br />
+
+      <!-- 
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Reset Form"> <br> 
+
+        Use HTML5 button tags inside forms to submit or reset form data
+      -->
+      <button type="submit">Submit Form</button>
+      <button type="reset">Reset Form</button>
+    </form>
+
+
+    <h2>Form Structure 2</h2>
+    <form action="" method="POST">
+      <!-- 
+        Less flexible for complex CSS layouts, as the text and the input are strictly bound together in the DOM tree (Can't place label and input in separate locations)
+        WHEN TO USE ??
+        if we are dynamically generating lists of forms (like in React or Vue) and want to avoid the headache of generating hundreds of unique ID strings
+      -->
+      <label>
+        First Name:
+        <input type="text" name="first-name" required />
+      </label>
+      <br />
+      <label>
+        Last Name:
+        <input type="text" name="last-name" required />
+      </label>
+      <br />
+
+      <button type="submit">Submit Form</button>
+      <button type="reset">Reset Form</button>
+
+    </form>
+
+
+    <h2>Form Structure 3</h2>
+    <form action="" method="POST">
+      <!-- <div> to group label and input pair together
+        - we can move this group as a whole together
+        - (the label and input will stay together, structurally) 
+        - we can set warning message related to this group inside the div, just after the input
+      -->
+      <div>
+        <label for="firstame">First Name:</label>
+        <input type="text" id="firstame" name="firstame" required />
+        <!-- validation/warning/helper message goes here : <p> -->
+      </div>
+      <div>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <!-- passwords are visually obscured -->
+        <input type="password" id="password" name="password" required />
+      </div>
+      <div>
+        <!-- radio - select only one -->
+        <input type="radio" name="temp" id="is-warm" value="Warm" />
+        <label for="is-warm">Warm</label>
+        <input type="radio" name="temp" id="is-cold" value="Cold" />
+        <label for="is-cold">Cold</label>
+        <input type="radio" name="temp" id="is-just-right" value="Just Right" />
+        <label for="is-just-right">Just Right</label>
+      </div>
+      <div>
+        <!-- checkbox - select one or many
+          Because both inputs share the exact name sweets, some backend languages (like PHP) will only grab the last selected value if submitted. If we plan to allow users to select multiple options and want them submitted as an array, adding square brackets to the name attribute will accomplish this 
+              name="sweets[]"
+        -->
+        <input type="checkbox" name="sweets[]" id="is-cookies" value="Cookies" />
+        <label for="is-cookies">Cookies</label>
+        <input type="checkbox" name="sweets[]" id="is-candy" value="Candy" />
+        <label for="is-candy">Candy</label>
+      </div>
+
+      <!-- <div>
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Reset Form">
+      </div> -->
+
+      <div>
+        <button type="submit">Submit Form</button>
+        <button type="reset">Reset Form</button>
+      </div>
+    </form>
+
+
+
+  </body>
+
+</html>

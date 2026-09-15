@@ -1,0 +1,9 @@
+Core Parts of HTML
+-------------------
+
+  - The HTML Standard
+  - Who Approves it and Where it comes from
+  - Creating a Basic Webpage
+  - Common Tags in HTML and How They Work
+
+  🎯 Become comfortable building very basic HTML web pages

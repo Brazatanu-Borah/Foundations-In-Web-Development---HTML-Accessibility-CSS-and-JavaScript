@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Our First Webpage</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <h1>Hello World</h1>
+
+    <!-- LOREM TEXT
+      lorem
+      lorem40
+    -->
+
+    <!-- 
+      p     - separate blocks of text
+      div   - separate section/horizontal block of a web page
+      span  - inline grouping (mostly for styling)
+    
+    -->
+
+    <!-- 👆 Text by default is quite "adaptive" to the screen size -->
+
+
+    <!-- Paragraph tag (for separating a single text-thought from another)
+       Any loose text must be placed inside of a 'p' tag [we can change the new line behavior if needed]
+       <p> creates new lines (looks like actual paragraphs of text)
+        - we put text that is semantically related and expresses a single thought within <p> tags
+        - the <p> element should only contain inline level tags inside
+  -->
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex magnam sequi, nesciunt dolor sunt est perspiciatis! Dolores itaque sapiente perspiciatis, modi, quaerat accusamus ad consequuntur fuga molestiae nemo cumque debitis blanditiis! Ab assumenda excepturi velit odit nostrum, exercitationem nisi impedit dignissimos dicta consectetur provident numquam architecto odio, illum deleniti accusamus?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sunt non, a magnam quas voluptatibus aperiam voluptas, laudantium dolore ex veniam? Veritatis quaerat ea quidem animi itaque id eligendi amet.
+    </p>
+
+
+    <!-- Content Division tag DIV (for grouping related content/tags that go together) -->
+    <!-- No 'hierarchy' or 'style' associated with div tags -->
+    <!-- only creates new line before and after the div tag; hence creates a separate section of area structurally, but not semantically -->
+    <!-- We put content that go together, because we want them to. Not that all that content is related to one another
+        - we may want a <h2>, <p> and <button> to remain together, though they are all independent semantic elements for a specific purpose or role
+    -->
+    <!-- Create STRUCTURAL content sections in our web page -->
+    <!-- Tags/Elements of diff types can be nested inside a <div> element -->
+    <!-- Divs can be nested inside each other (typical way of creating webpage layout) -->
+
+
+    <div style="border: solid 1px #ccc">
+
+      <!-- unmarked text -->
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium velit dolores iste magni, minus nam, laudantium dignissimos repellendus enim sit, rem reiciendis deserunt est voluptates eius.
+
+      <h2>Subtitle</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi error esse quas fugit corrupti modi, rem animi voluptatem reiciendis. Corrupti?
+      </p>
+      <p>Paragraph</p>
+      <div>
+        inner div 1
+      </div>
+      <div>
+        inner div 2
+      </div>
+    </div>
+
+    <div style="border: solid 1px #ccc">
+
+      <!-- unmarked text -->
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium velit dolores iste magni, minus nam, laudantium dignissimos repellendus enim sit, rem reiciendis deserunt est voluptates eius.
+
+      <h2>Subtitle</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi error esse quas fugit corrupti modi, rem animi voluptatem reiciendis. Corrupti?
+      </p>
+      <p>Paragraph</p>
+      <div>
+        inner div 1
+      </div>
+      <div>
+        inner div 2
+      </div>
+    </div>
+
+
+    <!-- Inline Grouping; span tag (only inline elements, mostly text and inline images and links) -->
+    <!-- Doesn't create a separate section of content (no new line created)
+        - no semantic meaning to the group, not creating a separate structural block of content, just for styling a piece of inline text 
+        - still remains part of the original chunk of text
+    -->
+    <!-- Can be inserted anywhere in line, paragraphs, headings and even divs -->
+
+    <h2>Hello <span>world</span></h2>
+    <p id="span-tag">
+      <span style="font-size: 48px; color: red; font-weight: 900;">L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, aspernatur delectus alias distinctio voluptatem dolorum! <span>Unde, voluptas, quasi molestias</span> doloremque laudantium rerum necessitatibus velit atque nulla sequi, ducimus totam earum?
+    </p>
+
+  </body>
+
+</html>

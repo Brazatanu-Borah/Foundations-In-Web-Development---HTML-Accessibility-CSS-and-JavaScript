@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Our First Webpage</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <h1>Hello World</h1>
+
+    <!-- 
+      Content/Block images - good for SEO and Accessibility
+
+      Name of the image must be descriptive (SEO friendly)
+
+      <img /> - self-closing element | replaced
+        - we can wrap an image inside <p> or <h1> but not good semantically
+        - we can place images inside of <a> tags to create logo image that takes the user to the homepage (special technique must be used to preserve accessibility!!
+
+
+      Wrapping text around images
+      Aligning images with the rest of the text
+         we will do using CSS!!
+
+
+      Places where we put images
+      ------------------------
+        - main content image
+        - favicon image
+        - images on backgrounds
+        - images on borders
+
+      Image file extensions
+        - .jpg
+        - .png
+
+      Image naming
+        multi word names with hyphens to join the words
+          'my-cat.jpg'
+          'my-cat-01.jpg'
+        - all lowercase is preferred
+        - start with letters
+
+      ATTRIBUTES
+        'src' - sets the location for the image file (relative/absolute path)
+            - relative file path (good)
+            - absolute file path (good when we host our own images [our own url], not good when we load someone else's histed image [someone else's url])
+        'alt' - necessary attribute for 'all' images
+            - when images don't load
+            - screen readers read this text out loud
+
+        'height', 'width' - good for load speed
+          browser preallocates space for images beforehand
+          no layout shifting while loading
+          >> fallback when CSS is not working
+          !! mostly used when we load images from the server dynamically
+
+      Images have intrinsic size of their own
+        - actual pixel dimension and resolution
+          >> control using 'width' and 'height' attributes
+        - we are still downloading the massive image file but cropping it fit width and height
+
+    -->
+
+    <!-- Local image (relative file path) -->
+    <img src="./images/dog-on-the-couch.jpg" alt="Dog laying down on the couch" width="300" height="169" />
+
+    <!-- Image hosted on the web (absolute file path) [Not Reliable] -->
+    <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Black_Labrador_Retriever_-_Male_IMG_3323_%28cropped%29.jpg/500px-Black_Labrador_Retriever_-_Male_IMG_3323_%28cropped%29.jpg" alt="Black labrador standing alert and looking at something" width="300" height="202" />
+
+
+    <!-- Image as a link 
+    -->
+    <a href="https://en.wikipedia.org/wiki/Dog">
+      <img src="./images/dog-on-the-couch.jpg" alt="Dog laying down on the couch" width="100" height="56" />
+    </a>
+    <!-- (NOT GOOD for SEO and Accessibility)
+      - must have text inside the link (can be made hidden to people, but make it readable by screen readers)
+
+      - Eg . logo image, wrapped inside a link to take the user to the home page 
+      
+          <a href="/">
+            <p class="sr-only">Company Name</p>
+            <img src="logo.png" />
+          </a>
+
+    -->
+  </body>
+
+</html>

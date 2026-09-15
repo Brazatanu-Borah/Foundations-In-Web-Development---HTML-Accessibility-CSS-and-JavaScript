@@ -1,0 +1,103 @@
+History
+  - tells where that technology came from
+  - how it evolved - different versions
+  - should we use it or not
+  - when to use and when not to use
+  - which version to use
+
+Tim Berner's Lee (father of WWW)
+  CERN (standard to show things online)
+  orignally based on SGML standard (that CERN used)
+
+
+ORGANIZATIONS (Governing bodies for HTML, created and maintained standards)
+=============
+  IETF took over from CERN
+  W3C provided recommendations (1997)
+  WHATWG - currently governs all things related to HTML and DOM
+    Living Standard of HTML and DOM Standards
+
+
+  
+  1990 - HTML 1 [IETF]
+    - laying out text
+    - mainly technical documentation
+
+  1995 - HTML 2 [IETF]
+    - <img> element
+    - styling tags and properties
+    - tables for content layout
+    - web pages become more aesthetic
+
+  1997 - HTML4 (first W3C recommendation) [start of modern HTML]
+    3 types of standards (strict, transitional and frameset)
+    - for different types of browser that supported different levels of standards
+    - messy times
+
+    Transition phase
+    - 2 different standards
+    - HTML and XHTML
+
+  2014 - "HTML5" (taken over by WHATWG, W3C only for recommendation)
+    Modern Web Standard (mix of technologies)
+    - Rich Interactive HTML
+    - Mix of HTML and browser API's
+
+  2019 - WHATWG became the main overseer of HTML and DOM standards
+    - no version numbering from hereon
+    - 'Living Standard'
+    - what tag will do what, what tags to be deprecated and what tags will have how much interactivity
+    - when the new standrds will be released
+
+    👆 Browsers then try to support all the new standrds that is pushed by the WHATWG
+      - always will be slightly behind the actual released standards
+      - browser makers always keep an eye out for new standards that are released.
+
+
+      Modern HTML
+      ------------
+      Actual content
+      'Structure' of the document (not the styling)
+      Semantics of the data
+              Some default style properties
+              Some basic interactivity
+
+        - tags not for actual structure and deprecated by WHATWG should not be used
+
+
+==============================================================================
+HTML file is a text file with a '.html' file extension
+
+
+*****************
+https://caniuse.com/ [HTML, CSSm JS and DOM Apis]
+
+  info about new/old html standards and their support and implementation
+  also for experimental and preview versions of standards
+  which browser supports which standard and by how much
+  also global support
+
+
+
+DOCTYPE - states to the browser which version of html we are using
+------------------------------------------------------------------
+  <!-- IETF (1, 2) -->
+  <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+
+
+    <!-- W3C (3, 4, xhtml) -->
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+  <!-- WHATWG (HTML5) (Only recommendation by W3C) -->
+  <!DOCTYPE html>
+
+  
+
+
+
+

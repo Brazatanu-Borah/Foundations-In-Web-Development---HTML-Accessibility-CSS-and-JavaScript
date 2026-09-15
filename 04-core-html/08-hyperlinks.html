@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Our First Webpage</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <h1>Hello World</h1>
+
+    <!-- Anchor tags create hyperlinks;
+     <a>...</a> - one of the original tags of HTML
+
+      - used to perform a primary function of HTML documents
+      - to connect 
+        >> two resources at different locations on the internet
+        >> two locations
+    -->
+
+    <!-- 
+      href - attr will make the anchor tag a 'hyperlink', otherwise not
+        >> relative path (we start from where we are at that moment, in our website)
+              /   - refers to the root folder
+              ./  - refers to current folder
+              ../ - refers to immediate parent folder (up one folder)
+              folder/sub-folder/sub-sub-folder
+        >> absolute path (we start from anywhere in our website)
+              is very fragile
+              cannot be modified easily
+        >> id selectors
+        >> only '#'
+
+
+      The 'link' (text/image/video) must be contextual or meaningful
+        SEO + ACCESSIBILITY BEST PRACTICE
+
+        
+      target - attr when we want the linked document to open in a new tab/widow/browser etc
+
+      👆 Some attributes are optional some are MUST
+
+    -->
+    <div>
+
+      <a>not a link</a>
+
+      <br />
+
+      <!-- Bookmark link (specific spot on same page) with id attribute
+        >> TOC (left sidebar) CONTENT (right main block) [Documentation Websites]
+        >> CREATE FAQ (questions and answers) 
+      -->
+      <a href="#heading-3">
+        go to the third heading, in this same document
+      </a>
+
+      <br />
+
+      <a href="#page-bottom">
+        go to the bottom of the document
+      </a>
+
+      <br />
+
+      <!-- Bookmark link (specific spot on different page) with id attribute -->
+      <a href="./07-content-grouping.html#span-tag">
+        go to a specific section on a different webpage in same website
+      </a>
+
+      <br />
+
+      <!-- Linking to a different document (same website)
+        RELATIVE FILE PATH 
+      -->
+      <a href="./03-basic-website-structure.html">
+        go to different webpage in same website
+      </a>
+
+      <br />
+
+      <!-- Linking to a different document (different website) [with 'target' attr]
+        ABSOLUTE FILE PATH 
+      -->
+      <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">
+        go to a different website on the internet
+      </a>
+
+    </div>
+
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta recusandae error dicta nulla numquam incidunt culpa quaerat ea nam deserunt ab, sequi debitis alias voluptatem perferendis impedit? Accusamus maxime autem iure consequuntur perspiciatis eligendi, qui quibusdam incidunt, tenetur voluptas animi.
+    </p>
+    <h2>Second Heading 1</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptatibus, nostrum maiores quis voluptates error vel dolorem dignissimos esse unde?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta recusandae error dicta nulla numquam incidunt culpa quaerat ea nam deserunt ab, sequi debitis alias voluptatem perferendis impedit? Accusamus maxime autem iure consequuntur perspiciatis eligendi, qui quibusdam incidunt, tenetur voluptas animi.
+    </p>
+    <h2>Second Heading 2</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptatibus, nostrum maiores quis voluptates error vel dolorem dignissimos esse unde?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta recusandae error dicta nulla numquam incidunt culpa quaerat ea nam deserunt ab, sequi debitis alias voluptatem perferendis impedit? Accusamus maxime autem iure consequuntur perspiciatis eligendi, qui quibusdam incidunt, tenetur voluptas animi.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repellat nihil natus? Molestiae enim, dolorum tempora perferendis sequi quaerat, quam necessitatibus dolores perspiciatis odio fuga sit. Molestiae animi debitis expedita aliquid optio dolorum iure iste tenetur, voluptas vitae quas asperiores facilis modi corrupti maiores! Nam ea itaque rem, tempore repudiandae architecto ducimus vitae doloribus atque sapiente recusandae necessitatibus accusamus minima. Ullam ducimus nostrum adipisci tempora amet odit nobis necessitatibus velit, expedita voluptatum quod architecto minus, molestiae minima officiis blanditiis optio ex. At iure nesciunt possimus dolores nam odit dignissimos esse sunt non, natus quam blanditiis numquam? Laborum assumenda reiciendis voluptate!
+    </p>
+
+
+    <h2 id="heading-3">Second Heading 3</h2>
+    <p>
+      <a href="#">
+        go to the top of the page (without page refresh)
+      </a>
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptatibus, nostrum maiores quis voluptates error vel dolorem dignissimos esse unde?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta recusandae error dicta nulla numquam incidunt culpa quaerat ea nam deserunt ab, sequi debitis alias voluptatem perferendis impedit? Accusamus maxime autem iure consequuntur perspiciatis eligendi, qui quibusdam incidunt, tenetur voluptas animi.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repellat nihil natus? Molestiae enim, dolorum tempora perferendis sequi quaerat, quam necessitatibus dolores perspiciatis odio fuga sit. Molestiae animi debitis expedita aliquid optio dolorum iure iste tenetur, voluptas vitae quas asperiores facilis modi corrupti maiores! Nam ea itaque rem, tempore repudiandae architecto ducimus vitae doloribus atque sapiente recusandae necessitatibus accusamus minima. Ullam ducimus nostrum adipisci tempora amet odit nobis necessitatibus velit, expedita voluptatum quod architecto minus, molestiae minima officiis blanditiis optio ex. At iure nesciunt possimus dolores nam odit dignissimos esse sunt non, natus quam blanditiis numquam? Laborum assumenda reiciendis voluptate!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptatibus, nostrum maiores quis voluptates error vel dolorem dignissimos esse unde?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta recusandae error dicta nulla numquam incidunt culpa quaerat ea nam deserunt ab, sequi debitis alias voluptatem perferendis impedit? Accusamus maxime autem iure consequuntur perspiciatis eligendi, qui quibusdam incidunt, tenetur voluptas animi.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repellat nihil natus? Molestiae enim, dolorum tempora perferendis sequi quaerat, quam necessitatibus dolores perspiciatis odio fuga sit. Molestiae animi debitis expedita aliquid optio dolorum iure iste tenetur, voluptas vitae quas asperiores facilis modi corrupti maiores! Nam ea itaque rem, tempore repudiandae architecto ducimus vitae doloribus atque sapiente recusandae necessitatibus accusamus minima. Ullam ducimus nostrum adipisci tempora amet odit nobis necessitatibus velit, expedita voluptatum quod architecto minus, molestiae minima officiis blanditiis optio ex. At iure nesciunt possimus dolores nam odit dignissimos esse sunt non, natus quam blanditiis numquam? Laborum assumenda reiciendis voluptate!
+    </p>
+
+    <br />
+
+    <h3 id="page-bottom">Page Bottom</h3>
+
+    <a href="#">
+      go to the top of the page (without page refresh)
+    </a>
+
+  </body>
+
+</html>
