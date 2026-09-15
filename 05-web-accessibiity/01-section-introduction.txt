@@ -1,0 +1,11 @@
+WEB ACCESSIBILITY
+==================
+
+Depends mostly on HTML Tags
+
+Web for Everyone (no hand, color blindness, no eyes, no mouse, only mobile)
+Accessible for Everyone (humans, screen readers & robots)
+
+Disability is sometimes not permanent
+
+Tools to evaluate accessibility main points

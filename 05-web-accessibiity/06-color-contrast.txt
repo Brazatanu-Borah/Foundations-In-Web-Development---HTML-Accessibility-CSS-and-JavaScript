@@ -1,0 +1,20 @@
+{NOT RELATED TO SCREEN READERS} OR NOT FOR PEOPLE WHO CAN'T SEE
+
+{RELATED TO PEOPLE THAT CAN SEE}
+================================
+
+Use accessible 'COLOR SCHEMES' >> must pass accessible color
+
+
+Be aware of Color Contrast ( between primary text and background)
+  - max contrast (pure black with pure white)
+  - #222 with #eee (good contrast)
+
+
+Keep in consideration for 'Color-Blindness' issue in some people
+  >> different types of color blindness
+  >> red and green (can't separate these colors apart)
+
+
+Design decisions must be made with color contrast in mind
+  - diff for diff people (kids, old people, good eyed people, poor eyesight people)

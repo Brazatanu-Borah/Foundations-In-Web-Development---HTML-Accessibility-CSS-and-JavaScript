@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Web Accessibility Demo</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+
+    <!-- 
+
+      caption - container element (semantic labelling for the table)
+        - first child of the <table> element (if included)
+
+      scope=
+          "row"
+          "col"
+          "colgroup"
+          "rowgroup"
+
+        col      - The header applies to all cells in the entire column below it.
+        row      - The header applies to all cells in the entire row to its right.
+        colgroup - The header applies to a group of columns (used alongside colspan).
+        rowgroup - The header applies to a group of rows (used alongside rowspan).
+
+          >> The scope attribute explicitly connects HTML table header cells (<th>) to their corresponding data cells (<td>)
+              - scope must only be added to <th> tags, never to <td> tags
+
+
+      colspan - how many data cells it is spanning (horizontally)
+      rowspan - how many data cells it is spanning (vertically)
+
+    -->
+
+
+    <table border="" width="600">
+
+      <caption>Company Employee Data</caption>
+
+      <thead>
+        <!-- 2 rows in the thead, both have th cells -->
+        <tr>
+          <th colspan="5">User Details</th>
+        </tr>
+        <tr>
+          <!-- tell the screen reader that these th represent column headers -->
+          <th scope="col">Sl. No.</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col" colspan="2">Address</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <!-- tell the screen reader that this th represents row header -->
+          <th scope="row">1</th>
+          <td>John Doe</td>
+          <td>john@email.com</td>
+          <td>Brooklyn</td>
+          <td rowspan="2">New York</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jill Maher</td>
+          <td>jill@email.com</td>
+          <td>Buffalo</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+
+      </tfoot>
+
+    </table>
+
+  </body>
+
+</html>

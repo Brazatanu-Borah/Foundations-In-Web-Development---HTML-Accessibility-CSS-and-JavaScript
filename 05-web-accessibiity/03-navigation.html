@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Web Accessibility Demo</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+
+    <!-- 
+
+      SEO - SEARCH ENGINE OPTIMIZATION  (means search engines can easily and readily find our information)
+    
+      SCREEN READERS can "read" these tags which helps in overall accessibility; creates 'landmarks' on the page
+
+      Search Engines can also 'read' these landmarks and semantic tags and rank our site accordingly in the SERP
+
+      Good Accessibility means - Site is good for people with disabilities as well as Search Engines
+
+
+        title - the main blue chunk of text in the SERP entry
+
+
+        header - only 1 main/page level
+                can also be placed inside section and articles (many)
+
+
+        main - only 1 per page/document
+              can't have a direct header and a footer (header or footer as direct children)
+
+
+        footer - only 1 main/page level
+                can also be placed inside section and articles (many)
+                copyright, t&c, sitemap, additional links, privacy policy etc
+
+
+        small - fine print text info | less important text than surrounding text
+                (smaller font size than surrounding text) default
+                copyright, legals etc
+
+
+        nav - only for actual 'navigation links' (not any link)
+              document can have many navigation section on the page
+              takes user to different location | just opens resource/files
+
+        
+        article - self-contained part of the page
+              we can move the article to different location or page without disrupting the flow of info in the
+              must have a heading tag as first child
+              can have 'section' tag inside of an article
+
+
+        section - a major group of related content of the page (full horizontal width)
+              must have a heading tag as first child
+              can have 'article' tag inside of sections
+
+
+        aside - extra side information 'related' to the 'immediate parent'
+                not part of the 'main flow' of information
+                in the 'main' tag; info related to the body
+                inside of article, section
+
+
+        figure     - for any graphic/media with a caption (wrapper for images, tables)
+        figcaption - the caption semantically attached to the media inside the 'figure'
+            - if we have a image we have a figcaption, we can leave the alt attr empty
+
+
+        time - machine readable time
+              conforms to iso-8601 standards
+              datetime="" attribute >> we can enter the exact date and time inside this attr
+
+          
+        HTML ENTITY CODE
+          &copy;    Entity Name
+          &#169;    Entity Number - Decimal
+          &#xA9;    Entity Number - Hexadecimal
+          \u00A9    Unicode symbol
+
+    -->
+
+    <header>
+
+      <!-- First way
+        - minor link groups where structure doesn't matter, such as a "Terms of Service | Privacy Policy" inline row at the very bottom of a footer. 
+      -->
+      <nav>
+        <a href="#">TOC</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Disclaimer</a>
+      </nav>
+
+      <!-- Second way (preferred) using ul,li and a tag
+        - preferred for navigation menu, mega menu and dropdown lists 
+      -->
+      <nav>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">menu</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main>
+      <!-- Self Contained Content -->
+      <article>
+        <h2>Article Title</h2>
+        <p>description of the article</p>
+
+        <!-- Machine readable date and time inside the datetime="" attr -->
+        <time datetime="2027-05-15T10:48:12-06:00">
+          May 15th, 2027 | 05/15/27 (depending on the country that this format is used)
+        </time>
+
+        <aside>
+          <!-- extra idea related to 'article' tag, not in the main flow -->
+        </aside>
+
+        <figure>
+          <img src="" alt="A graph representing all the sales for the months of January 2027 till April 2027">
+          <figcaption>Fig.1 - Report for January - April</figcaption>
+        </figure>
+      </article>
+
+      <section id="hero-banner">
+        <h2>Section Title</h2>
+        <!-- A separate section that encloses 'nearby' content -->
+        <aside>
+          <!-- extra idea related to 'section' tag, not in the main flow -->
+        </aside>
+        <nav>
+          <h3>Blog Posts</h3>
+          <ul>
+            <li><a href="">Blog post 1</a></li>
+            <li><a href="">Blog post 2</a></li>
+            <li><a href="">Blog post 3</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <section id="site-brands">
+
+      </section>
+      <section id="site-services">
+
+      </section>
+      <section id="site-gallery">
+
+      </section>
+      <section id="site-reviews">
+
+      </section>
+      <section id="site-contact">
+
+      </section>
+
+      <aside>
+        <!-- extra idea related to 'main' tag, not in the main flow -->
+      </aside>
+
+    </main>
+
+    <footer>
+      <small>Copyright &copy; 2027 by ACME Corp. All Rights Reserved.</small>
+    </footer>
+
+  </body>
+
+</html>

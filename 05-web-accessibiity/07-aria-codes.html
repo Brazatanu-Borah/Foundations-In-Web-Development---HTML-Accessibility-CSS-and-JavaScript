@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Web Accessibility Demo</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+
+    <!-- WE ARE NOT GOING TO USE ARIA ATTR THAT MUCH
+
+      Step 1 : Always Use Proper Semantic HTML 'FIRST' - 95%
+        >> 95% we don't have to worry about aria
+          h2, h3
+          p
+          button
+          a
+          input
+
+
+      Step 2 : NECESSARY Only when there is no semantic html tags predefined; we use normal tags with ARIA attributes & roles to 'attach meaning and context' to that normal tag
+
+        ARIA - Accessible Rich Internet Application
+              (manually ADD accessibility, description, role and context to our HTML tags)
+
+            **1** aria roles (MORE COMMON; describes what the element is 'USED AS')
+                    role="checkbox" (element should be treated as a input type of checkbox)
+            **2** aria- attributes (LESS COMMON; describes the current state of the element)
+                    aria-*=""
+
+            No Effect on the Structure & Styling or Layout of the Web page
+            Only changes for Screen Readers
+
+              ****************************
+              https://www.w3.org/TR/wai-aria-1.0/roles
+                Aria Roles (only for special cases)
+              ****************************
+
+      ARIA ATTR ONLY ADDS MEANING NOT STRUCTURE TO HTML DOCUMENT
+      ----------------------------------------------------------
+        - we can make the span a checkbox for screen readers
+        - but we have to manually style it using CSS to look like a checkbox
+
+        👆 When we have external libs creating elements that are not what they are supposed to be, then we may have add aria attributes
+
+      -->
+
+    <form>
+      <!-- make this span to 'look like' a checked checkbox input to screen readers (what this element is what it's state is) -->
+      <span id="remember-me" role="checkbox" aria-checked="true">
+        Remember Me
+      </span>
+
+      <!-- make this a tag to 'look like' a push button to screen readers -->
+      <a href="#" role="button">SUBMIT</a>
+    </form>
+
+
+    <!-- This is little bit more specific (not necessary, but good to keep), competing roles -->
+    <nav>
+      <ul role="menubar">
+        <li role="menuitem"><a href="#">Home</a></li>
+        <li role="menuitem"><a href="#">About</a></li>
+        <li role="menuitem"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- this 'looks like' a navigation menu to screen readers -->
+    <div role="menu">
+      <div role="menubar">
+        <div role="menuitem"><a href="#">Home</a></div>
+        <div role="menuitem"><a href="#">About</a></div>
+        <div role="menuitem"><a href="#">Contact</a></div>
+      </div>
+    </div>
+
+    <!-- We we have have more than one menu on the page -->
+    <nav role="Main Navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+
+  </body>
+
+</html>

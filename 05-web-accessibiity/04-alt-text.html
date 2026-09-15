@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Web Accessibility Demo</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- ALTERNATE TEXT FOR IMAGES
+
+        alt - attribute necessary for 'CONTENT' images
+              a 'detailed visual description' of the image, as if describing to a blind person 
+
+              [WORD PICTURE]
+
+              will appear ar a 'broken file icon' when image is not loaded (for various reasons)
+
+              good for SEO
+
+              always put the alt tag but can be left empty for 'DECORATIVE' images (hides it from the screen readers)
+
+              - for decorative images keep the alt text empty
+
+
+
+        MACHINE READABLE TEXT FOR HUMANS AS WELL AS SCREEN READERS
+        ----------------------------------------------------------
+        figcaption - descriptive caption semantically linked to the media
+              - for sighted and non sighted users, both [EVERYONE]
+              - if same info then keep alt attr empty
+              - just have a good figcaption for both non-sighted users, sighted users and robots
+
+              Only for images that needs to have a semantic labelling
+
+              can be for images, video, some table, some forms etc
+              gives context for the media inside of the <figure> tag
+
+      -->
+
+
+
+    <!-- alt tag must for SEO/Content images -->
+    <div>
+      <img src="./favicon.ico" alt="An icon representing the logo for ABC company" width="50" height="50" />
+    </div>
+
+    <!-- alt tag empty (or decorative images) -->
+    <div>
+      <img src="./images/bg.jpg" alt="" width="500" />
+    </div>
+
+
+
+    <figure>
+      <!-- keep alt text empty if figcaption is present -->
+      <img src="./images/dogon-the-couch.jpg" alt="" width="300" height="169" />
+
+      <figcaption>A black and white dog laying on the couch under a blanket</figcaption>
+    </figure>
+
+
+
+  </body>
+
+</html>

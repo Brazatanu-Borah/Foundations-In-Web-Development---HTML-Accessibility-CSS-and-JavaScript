@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- the language of this entire page is set to english -->
+<html lang="en">
+
+  <head>
+    <title>Web Accessibility Demo</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+
+    <!-- 
+
+      By default - language of a web page in 'unknown'
+
+      'lang' - attribute in the html tag (global lang attribute)
+              also can in specific elements, p, h1 etc
+
+              browsers can offer a suggestion to translate the language of the web page to the language of the site visitor
+    
+    -->
+
+    <p>
+      The lang attribute in HTML specifies the language of the content within an element. This attribute is essential for various reasons, including accessibility, search engine optimization, and proper text rendering.
+    </p>
+
+    <!-- this paragraph text uses the French language -->
+    <p lang="fr">
+      L’attribut lang en HTML spécifie la langue du contenu d’un élément. Cet attribut est essentiel pour diverses raisons, notamment l’accessibilité, l’optimisation des moteurs de recherche et un rendu de texte approprié.
+    </p>
+
+    <!-- this paragraph text uses the British English language, with just a french word in the middle -->
+    <p lang="en-GB">
+      The lang attribute in HTML specifies the language of the content within an <span lang="fr">prvek</span>. This attribute is essential for various reasons, including accessibility, search engine optimisation, and proper text rendering.
+    </p>
+
+
+  </body>
+
+</html>

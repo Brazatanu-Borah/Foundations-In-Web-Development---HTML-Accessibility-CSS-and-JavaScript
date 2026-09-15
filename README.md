@@ -14,7 +14,7 @@ I will check these off as I complete each section:
 - [x] 02. How The Web Works
 - [x] 03. Intro to VSCode (My code editor)
 - [x] 04. Core HTML (Building website structure)
-- [ ] 05. Web Accessibility (Making sites usable for everyone)
+- [x] 05. Web Accessibility (Making sites usable for everyone)
 - [ ] 06. Core CSS (Styling and designing websites)
 - [ ] 07. Debugging HTML and CSS (Finding and fixing mistakes)
 - [ ] 08. Deploying a Website (Putting a site live on the internet)

@@ -1,0 +1,6 @@
+
+Google Accessibility Tool
+
+  'lighthouse' plugin on Chrome and Chromium based browsers
+  
+  Evaluate my website for accessibility best practices (me a sighted user and working hands with a mouse an keyboard)

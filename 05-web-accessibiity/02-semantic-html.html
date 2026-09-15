@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Web Accessibility Demo</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <h1>Web Accessibility</h1>
+
+    <!-- 
+
+      START THINKING LIKE A SCREEN READER (looks at the raw html)
+      -------------------------------------------------
+        - it can read and understand html tags (and hence the content inside those tags)
+        >> then it verbally communicates what that site is doing based on the tags that it has read and understood
+        - it only reads 'important' stuff
+          looks at the 'body' element and everything inside of it
+          h1, h2's h3's, p, img, strong, em etc...
+        - we can make sure that the screen readers understands the content by using the right tag for the right job!
+
+      
+      SEMANTIC HTML - 
+      ---------------
+          meaningful/contextual tags
+          tags will describe what they are going to do
+          various tags have been created for different types of structural content
+          so, always use the 'right tag' for describing the 'right content' on the web page
+
+
+      Elements must FIRST tell the browser and screen readers what they will do
+      If there is a tag for that structure/content use it first, only when there is no specific tag for that purpose
+
+
+      Eg - Default Semantic Tags / Tags with A PURPOSE/ROLE
+      -----------------------------------------------------
+        These tags exactly tell the browser/screen readers what the content inside represents
+
+          h1 - for the page title
+          h2, h3, h4 - for any section headings
+          p - for chunks of text representing a single complete thought
+          img - for any kind of content image
+          a - for any kind of hyperlink (to go somewhere else)
+          button - for any type of push button (to react to the user action)
+          form - any kind of web form
+          table - for any data table
+          blockquote - for any block quotation
+
+
+      NOT - a span tag styled like a button and adding click event on it (performs the action, but screen readers)
+
+
+      Eg - Default Non-semantic Tags
+      ------------------------------
+
+          div  (block level structural grouping, no special meaning or importance)
+          span (inline level structural grouping, no special meaning or importance)
+      
+
+    -->
+
+  </body>
+
+</html>

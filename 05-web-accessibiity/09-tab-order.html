@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Web Accessibility Demo</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    
+    <!-- 
+
+      tab order - there is a default tab order for address bar and elements on the page
+
+        FOR no mouse, no hands navigation
+        ONLY USE tab index only when we want the element to behave as a "INTRACTABLE/CLICKABLE"
+
+          <button>
+          <a>
+            - they are already in the natural tab order on the page (top to bottom)
+
+        When we make any other element clickable, then we can add that element to the tab order dor the page
+            img
+            li
+            span
+
+
+      'tab stop's are visualized with a black border around the element (default styling)
+        >> we can change this using our custom CSS
+
+          Frameworks and Advanced CSS positions elements in different places than their original positions (For Changed Layout Order)
+          Use tab index for the actual visualized positions (not the html structure positions)
+
+      
+        tabindex="1" or greater (Forces a specific, manual keyboard navigation order)
+        
+        tabindex="-1" Removes the element from the natural tab order, but still allows it to be focused programmatically using JavaScript via .focus()
+
+        tabindex="0" Keeps or places the element in the natural tab order. It is highly recommended for making custom interactive elements (like a <div> acting as a button) accessible via keyboard
+
+    -->
+
+    <!-- forced tab order (3) -->
+    <p tabindex="3">Three</p>
+
+    <!-- button follows natural tab order, after our forced tab order finishes (4) -->
+    <button>button</button>
+
+    <!-- forced tab order (1) -->
+    <p tabindex="1">One</p>
+    <!-- forced tab order (2) -->
+    <p tabindex="2">Two</p>
+
+    <img src="./images/dog-on-the-couch.jpg" width="300" />
+
+    <!-- forced tab order (4) -->
+    <p tabindex="4">Four</p>
+
+    <!-- this link is removed from any natural or forced tab order on that page -->
+    <a href="http://www.google.com" tabindex="-1">link</a>
+
+    <!-- these will be added to natural tab order (after the button) -->
+    <p tabindex="0">Five</p>
+    <p tabindex="0">Six</p>
+    <p tabindex="0">Seven</p>
+
+
+  </body>
+
+</html>
