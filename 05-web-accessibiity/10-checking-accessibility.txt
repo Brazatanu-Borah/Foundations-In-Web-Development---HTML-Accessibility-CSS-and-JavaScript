@@ -2,5 +2,29 @@
 Google Accessibility Tool
 
   'lighthouse' plugin on Chrome and Chromium based browsers
+  - gives a report on the webpage, on diff categories
+
+      MODE
+        Navigation (default)
+        Timespan
+        Snapshot
+
+      DEVICE
+        mobile
+        desktop
+
+      CATEGORIES
+        Performance
+        Accessibility
+        Best practices
+        SEO
+        Agentic browsing
+
+
+    🔺 - indicates things we can modify to improve the score
+    Additional items to manually check (10)
+    Passed audits (11)
+    Not applicable (51)
   
-  Evaluate my website for accessibility best practices (me a sighted user and working hands with a mouse an keyboard)
+Evaluate my website for accessibility best practices
+  - me a sighted user and working hands with a mouse and a keyboard, with no color blindness

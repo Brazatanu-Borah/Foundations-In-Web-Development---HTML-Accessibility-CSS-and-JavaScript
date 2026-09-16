@@ -7,8 +7,10 @@
   </head>
 
   <body>
-    
-    <!-- 
+
+    <!-- KEYBOARD ONLY NAVIGATION / foot pedal navigation (no hands site visitor)
+
+      - We tab through the content step by step
 
       tab order - there is a default tab order for address bar and elements on the page
 
@@ -25,44 +27,58 @@
             span
 
 
-      'tab stop's are visualized with a black border around the element (default styling)
+      'TAB STOP's are visualized with a black border around the element (default styling)
         >> we can change this using our custom CSS
+
+          Follows from the top to bottom
 
           Frameworks and Advanced CSS positions elements in different places than their original positions (For Changed Layout Order)
           Use tab index for the actual visualized positions (not the html structure positions)
 
-      
+
+        Tab Stop are only for those elements that we want to be 'intractable', not just for the sake of tab order
+        If we don't want any element to be intractable, we remove it from the tab order
+
+
+
         tabindex="1" or greater (Forces a specific, manual keyboard navigation order)
         
         tabindex="-1" Removes the element from the natural tab order, but still allows it to be focused programmatically using JavaScript via .focus()
 
         tabindex="0" Keeps or places the element in the natural tab order. It is highly recommended for making custom interactive elements (like a <div> acting as a button) accessible via keyboard
 
+        Same tabindex, the one on top will be tabbed first, then the lower one
+
+
     -->
 
-    <!-- forced tab order (3) -->
-    <p tabindex="3">Three</p>
+    <main>
 
-    <!-- button follows natural tab order, after our forced tab order finishes (4) -->
-    <button>button</button>
+      <!-- forced tab order (3) -->
+      <p tabindex="3">Three</p>
 
-    <!-- forced tab order (1) -->
-    <p tabindex="1">One</p>
-    <!-- forced tab order (2) -->
-    <p tabindex="2">Two</p>
+      <!-- button follows natural tab order, after our forced tab order finishes (4) -->
+      <button>button</button>
 
-    <img src="./images/dog-on-the-couch.jpg" width="300" />
+      <!-- forced tab order (1) -->
+      <p tabindex="1">One</p>
+      <!-- forced tab order (2) -->
+      <p tabindex="2">Two</p>
 
-    <!-- forced tab order (4) -->
-    <p tabindex="4">Four</p>
+      <img src="./images/dog-on-the-couch.jpg" alt="" width="300" height="auto" />
 
-    <!-- this link is removed from any natural or forced tab order on that page -->
-    <a href="http://www.google.com" tabindex="-1">link</a>
+      <!-- forced tab order (4) -->
+      <p tabindex="4">Four</p>
 
-    <!-- these will be added to natural tab order (after the button) -->
-    <p tabindex="0">Five</p>
-    <p tabindex="0">Six</p>
-    <p tabindex="0">Seven</p>
+      <!-- this link is removed from any natural or forced tab order on that page -->
+      <a href="http://www.google.com" tabindex="-1">link</a>
+
+      <!-- these will be added to natural tab order (after the button) -->
+      <p tabindex="0">Five</p>
+      <p tabindex="0">Six</p>
+      <p tabindex="0">Seven</p>
+
+    </main>
 
 
   </body>
