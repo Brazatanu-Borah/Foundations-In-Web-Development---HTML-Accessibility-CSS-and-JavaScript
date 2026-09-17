@@ -1,0 +1,56 @@
+body {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+/* span {
+  font-size: 50px;
+} */
+
+
+/* 
+
+  #id-name{...}
+  .class-name{...}
+
+  selector1.selector2{...}
+
+  ancestor-selector descendant-selector {...}
+  selector1, selector2, selector3 {...}
+
+*/
+
+#first-character {
+  font-size: 50px;
+}
+
+.starting-character {
+  font-size: 50px;
+}
+
+/* element with both these 2 class values applied
+  - more specific (powerful than just .starting-character or .first-overall-character individually)
+*/
+.starting-character.first-overall-character {
+  color: red;
+}
+
+/* all elements with .sample-copy class */
+.sample-copy {
+  font-size: 24px;
+}
+
+/* only footer with .sample-copy class */
+footer.sample-copy {
+  color: red;
+}
+
+
+/* 👆 We can pre-style CSS classes amd keep them ready, and when we want to apply certain styles to some elements, we just apply the class to the HTML element, and we get the styles 
+  - Like Bootstrap does
+  - JavaScript uses these prestyled classes to dynamically apply/remove styles from elements, eg mobile menu toggle button
+*/
+

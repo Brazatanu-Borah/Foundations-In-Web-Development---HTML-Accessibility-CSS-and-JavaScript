@@ -1,0 +1,103 @@
+/* 
+
+  Browser applies some default font and text related properties on most elements
+
+  Font Types : 
+              Serif
+              Sans-serif
+
+              Monospace
+              Cursive
+
+  Font must be 'in' the client's computer, for them to load in the browser
+  We can force the device to download externally hosted fonts and then load them in the browser
+    - The website will look exactly the same in all the browsers
+
+  Font Stack (Main font + Fallback font + generic font)
+
+  Font Families
+    >> contrasting but goes well together
+    >> Font Pairing Principles (may be from diff font families)
+
+  Specific Font Family 
+
+  Web safe fonts (installed in almost all systems)
+  Hosted fonts (special servers that have fonts)
+
+  Hosted fonts can be added in HTML (<link> element) file or CSS file (@import syntax)
+
+    font-family
+    line-height
+    font-size
+    font-weight
+    font-style
+
+      Font Shorthand -
+        - avoid it most of the time
+
+*/
+
+
+/* 👆 linking in the html file is more preferable */
+/* Bringing in externally hosted fonts to our machine */
+/* just a css file with code for the fonts in it */
+/* @import statement must be the first thing in the css file (or <style> tag [very top] */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100;1,300;1,500;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+
+html {
+
+    /* font-size: 18px; */
+    font-size: 16px;
+
+    /* generic font family */
+    font-family: sans-serif;
+
+    /* specific + generic font family */
+    font-family: Arial, sans-serif;
+
+    /* 2 specific fonts + generic fallback BEST */
+    /* Using google fonts */
+    font-family: 'Roboto', Arial, sans-serif;
+
+    font-style: normal;
+    font-weight: 300;
+
+    /* good line height must be slightly more than 50% of font-size */
+    line-height: 26px;
+    line-height: 1.625rem;
+
+    /* line height without units (relative to specific font-size of that element */
+    line-height: 1.625;
+    /* best practice (will depend on the font-size of the element) */
+
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-weight: 700;
+}
+
+.starting-character {
+  /* font-size: 3rem; */
+  font-size: 2rem;
+  font-family: 'Mea Culpa', 'Freestyle Script', cursive;
+  font-weight: 700;
+}
+
+.starting-character.first-overall-character {
+  color: red;
+}
+
+.sample-copy {
+  font-size: 1.25rem;
+}
+
+footer.sample-copy {
+  color: red;
+  font-style: italic;
+}

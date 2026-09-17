@@ -1,0 +1,73 @@
+
+
+#sam-on-couch-img {
+  width: 30%;
+}
+
+/*
+  SELECTOR IMPORTANCE
+  *******************
+
+          Browser Defaults
+          *
+          Element/Tag selector         (broad selection)
+          Class selector               (group selection)
+          ID selector                  (unique element)
+          Inline style
+
+          !important
+  
+*/
+
+/* 
+  Specificity Index
+  https://specificity.keegan.st
+
+        browser, *   -- 0
+        element      -- 1
+        class        -- 10
+        id           -- 100
+        inline       -- 1000
+        
+        !important   -- 1000000000........ (only in extreme situations)
+
+*/
+
+/* 
+  EQUAL IMPORTANCE / SPECIFICITY
+    Order Wins
+
+    In case of identical selectors (equal specificity), styles nearest to the element (or towards the bottom of the css file) wins
+*/
+
+/* element selector */
+span {
+  font-size: 8px;
+}
+
+/* class selector */
+.special-class {
+  font-size: 20px;
+}
+
+/* more specific than single class */
+.special-text .special-class {
+  font-size: 10px;
+}
+
+/* id selector */
+#special-id {
+  font-size: 32px;
+}
+
+/* inline styles (42px) 
+  - last order of style (nearest to the element)
+*/
+
+/* !important flag */
+#special-id.special-class {
+  /* font-size: 56px !important; */
+
+  /* only another !important flag on this element later will override this !important */
+}
+

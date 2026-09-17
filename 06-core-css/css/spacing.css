@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+
+
+html {
+  /* font-size: 16px; */
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.625;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+p,
+div {
+  text-indent: 2rem;
+}
+
+.starting-character {
+  font-size: 2rem;
+  font-family: 'Mea Culpa', 'Freestyle Script', cursive;
+  font-weight: 700;
+}
+
+.starting-character.first-overall-character {
+  color: rgba(167, 1, 1, 0.8);
+}
+
+.sample-copy {
+  font-size: 1.25rem;
+}
+
+footer.sample-copy {
+  color: #3f3f3f;
+  font-style: italic;
+}
+
+.key-info {
+  text-decoration: underline wavy violet;
+}
+
+footer {
+  text-transform: uppercase;
+}
+
+.ninja {
+
+  border: solid 1px black;
+
+  /* display: block; */
+  /* display: inline; */
+  display: inline-block;
+  width: 22%;
+
+  /* box will be at least 100px in width, but will grow wider with more content, but never become narrower than 100px */
+  min-width: 100px;
+  height: 100px;
+
+  margin: 20px;
+  padding: 10px 30px;
+
+  border: solid 5px red;
+  /* border-style: solid; */
+  /* border-width: 5px; */
+
+  /* override just the color */
+  border-color: green;
+
+}
+
+.ninja.better {
+  min-height: 300px;
+  /* box will be at least 300px in height, but will grow taller with more content, but never become shorter than 300px */
+}
+
+/* 
+  SPACING of Elements
+  ===================
+
+    Margin : space outside of the border; negative space between two elements
+    Padding: space from the content up to the inner edge of the border
+      >> padding & margin can be applied on all 4 sides, 3 sides, 2 sides or only on 1 side
+
+    Border : inner/outer edge of the element
+      >> border can be applied on all 4 sides, 3 sides, 2 sides or only on 1 side
+
+    margin & padding should be in relative units (em, rem, %)
+
+    width  === actual content width (border-width, padding and margin not included)
+    height === actual content width (border-width, padding and margin not included)
+
+          width
+          min-width (media queries) [EXPAND FREELY WITH MORE CONTENT]
+            max-width (media queries)
+
+          height
+          min-height [EXPAND FREELY WITH MORE CONTENT]
+            max-height (be careful)
+
+*/

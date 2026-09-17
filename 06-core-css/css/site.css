@@ -1,0 +1,11 @@
+
+/* OVERRIDING VENDOR CSS =-==================
+
+  - these styles will override the css in the vendor css (if not using inline CSS or !important flag
+*/
+
+#special-id {
+  font-size: 20px;
+  color: red;
+  font-weight: 100;
+}

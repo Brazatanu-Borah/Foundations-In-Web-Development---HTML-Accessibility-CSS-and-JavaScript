@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>CSS Demo Project</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- <link rel="stylesheet" href="./css/creating-a-css-file.css"> -->
+    <!-- Internal Style (specific to a particular page) -->
+    <style>
+      /* 
+        When we want to do some specific style to only one page, different from the whole website we use the 'style' element 
+
+        - still style separate from the HTML code
+        - better than inline styling
+
+        - DRY (at least on this page)
+
+        - updating styles on elements on that particular html page becomes easy
+
+        - we can override external styles in some cases, if we want to
+          >> if we place these styles lower than the external stylesheet in the head
+
+        COMPROMISE BETWEEN INLINE STYLES VS EXTERNAL STYLESHEET
+      */
+
+      body {
+        font-size: 18px;
+      }
+
+      h1 {
+        font-size: 50px;
+      }
+
+      span {
+        font-size: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <h1>Our CSS Demo Project</h1>
+
+      <p>
+        <span>L</span>orem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos modi quod minus impedit eius aut temporibus sint ipsum beatae, libero, rerum quos dignissimos dolore? Saepe similique vitae officia odit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos modi quod minus impedit eius aut temporibus sint ipsum beatae, libero, rerum quos dignissimos dolore? Saepe similique vitae officia odit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos modi quod minus impedit eius aut temporibus sint ipsum beatae, libero, rerum quos dignissimos dolore? Saepe similique vitae officia odit?
+      </p>
+
+    </main>
+
+    <footer>
+      &copy;. All Rights Reserved.
+    </footer>
+  </body>
+
+</html>

@@ -1,0 +1,117 @@
+/* TEXT FORMATTING
+==================
+
+    Color on the web (light based) for screens
+      named color
+      rgb
+      rgba (common)
+      hex code (common)
+      hsl
+      hsla
+
+              >> text color         [color]
+              >> background color   [background-color]
+              >> border color       [border-color]
+              >> outline color      [outline-color]
+              >> shadow color
+              >> text decoration color
+
+      text-align
+                left (default)
+                right
+                center (also to center align elements inside a container, not the container)
+                justify (for super wide blocks of text, not for small columns of text) [dynamically adds extra space in between words
+      
+      text-decoration-line
+                underline
+                overline
+                line-through
+      text-decoration-color
+      text-decoration-style
+                solid (default)
+                wavy
+                dashed
+                dotted
+
+      text-indent
+                number unit
+
+      text-transform
+                uppercase (headings, titles)
+                capitalize (headings, titles)
+                lowercase
+
+
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+
+
+html {
+  /* font-size: 16px; */
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.625;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-weight: 700;
+
+  text-align: center;
+}
+
+p {
+  text-indent: 4rem;
+  /* indent 4 times the height of the text */
+}
+
+.starting-character {
+  font-size: 2rem;
+  font-family: 'Mea Culpa', 'Freestyle Script', cursive;
+  font-weight: 700;
+}
+
+.starting-character.first-overall-character {
+  color: rgba(167, 1, 1, 0.8);
+  color: #a70101cc;
+  color: hsla(0, 99%, 33%, 0.8);
+}
+
+.sample-copy {
+  font-size: 1.25rem;
+}
+
+footer.sample-copy {
+  color: #3f3f3f;
+  font-style: italic;
+}
+
+.key-info {
+  color: limegreen;
+  
+  /* text-decoration-line: underline; */
+  /* text-decoration-style: wavy; */
+
+  /* color will be taken from the font color */
+  text-decoration: underline wavy;
+
+  /* text-decoration-line: underline; */
+  /* text-decoration-style: wavy; */
+  /* text-decoration-color: violet; */
+  text-decoration: underline wavy violet;
+
+}
+
+footer {
+  text-transform: uppercase;
+}

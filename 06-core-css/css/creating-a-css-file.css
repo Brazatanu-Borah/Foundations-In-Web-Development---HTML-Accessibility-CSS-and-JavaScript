@@ -1,0 +1,40 @@
+/* 
+
+  External CSS file (plain text file with '.css' file extension)
+      - different web document
+      - style completely separated from the HTML document
+      - easy to manage styles in 100 html pages (also 10's of elements on each page)
+
+      - DRY principle enforced to a high degree
+
+      - we refer to this css file our HTML document using the link tag inside the head element
+      - use white space and indentation to make the css file human readable, we can compress the file (remove all extra white space and indentation later using minifier)
+
+
+    CSS SYNTAX
+    ----------
+
+      selector {
+        property1: value1;
+        property2: value2;
+        ...
+      }
+
+      selector - targets all matching elements on that page
+
+      TYPES OF SELECTOR
+        tag/element selector (the name of the tag itself)
+
+*/
+
+body {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+span {
+  font-size: 50px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>CSS Demo Project</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/targeting.css" />
+  </head>
+
+  <body>
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main>
+
+      <!-- SELECTORS - which element(s) are we targeting to style
+
+        Targeting All Elements
+          Element/Tag selector - directly the tag name
+
+        Targeting Specific Elements -
+          ID selector - one(of a type) per html document; only one id value per html element
+            - make the element unique (in that html document)
+            - single use per html document 
+            - selects only one (*) element
+
+          Class selector - many(of a type) per page; also many class value per html element
+            - make the element part of a group
+            - multiple use in that as well as other html documents
+
+          These are normal HTML attributes 
+            id=""
+            class=""
+            - placed in the starting tag of the element
+
+          
+          Element can have 1 id and multiple class values at the same time
+
+
+          ID and CLASS values must be kebab cased multi word
+            - specially id values (never single words, always 2/3 words joined by '-')
+
+            - descriptive names
+                id (why this element is unique)
+                  id="site-title"
+                class (what it does to the element, how it changes the element)
+                  class="card card-span-full"
+
+          ID and CLASS names must be contextual
+
+      -->
+
+      <h1>Our CSS Demo Project</h1>
+
+      <p class="sample-copy">
+        <span id="first-character" class="starting-character first-overall-character">L</span>orem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos modi quod minus impedit eius aut temporibus sint ipsum beatae, libero, rerum quos dignissimos dolore? Saepe similique vitae officia odit?
+      </p>
+      <p class="sample-copy">
+        <span class="starting-character">L</span>orem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos modi quod minus impedit eius aut temporibus sint ipsum beatae, libero, rerum quos dignissimos dolore? Saepe similique vitae officia odit?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos modi quod minus impedit eius aut temporibus sint ipsum beatae, libero, rerum quos dignissimos dolore? Saepe similique vitae officia odit?
+      </p>
+
+    </main>
+
+    <footer class="sample-copy">
+      &copy;. All Rights Reserved.
+    </footer>
+  </body>
+
+</html>

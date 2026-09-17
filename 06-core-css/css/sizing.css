@@ -1,0 +1,70 @@
+/* 
+
+  FIXED VS RELATIVE SIZING
+  ------------------------
+
+      Pixel - depends on screen size and pixel density (resolution)
+        - mostly fixed, not adaptive by itself
+        - images have a fixed intrinsic size in pixels
+      
+      Relative sizing helps to make the elements responsive/adaptive by itself
+        - size depends on 'something else'
+        - mostly for fonts and spacing
+
+      (numberunit)
+      2px, 2em, 2rem
+
+      'em'
+        - text size >> depends on parent element's font-size
+        - nesting with em creates absurd compounding effect
+        - BASE SIZE - parent font size
+        - SCALE WITH PARENT
+        - nesting creates compounding effect
+
+      'rem'
+        - text size >> depends on root(<html>) font-size
+        - all sizes inside the <html> tag depends on the size set in this spot
+        - BASE SIZE - html font size
+        - GLOBAL TYPOGRAPHY/SPACING/SIZING
+
+      ⭕ - no units
+        0px === 0em === 0rem === 0% === 0
+  
+*/
+
+html {
+  /* font-size: 18px; */
+  /* default size is 16px */
+}
+
+body {
+  font-size: 18px;
+}
+
+h1 {
+  /* font-size: 50px; */
+
+  font-size: 2em;
+  /* EM - takes from the immediate parent (body) [36px] */
+  
+  font-size: 2rem;
+  /* REM - takes from the root html tag (global typography) [32px] */
+}
+
+.starting-character {
+  /* font-size: 50px; */
+  font-size: 3rem;
+}
+
+.starting-character.first-overall-character {
+  color: red;
+}
+
+.sample-copy {
+  /* font-size: 24px; */
+  font-size: 1.25rem;
+}
+
+footer.sample-copy {
+  color: red;
+}

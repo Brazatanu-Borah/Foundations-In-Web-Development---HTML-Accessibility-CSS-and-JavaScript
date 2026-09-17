@@ -1,0 +1,38 @@
+Stylesheet language for styling html elements as well as their layout
+CSS file is a text file with a '.css' file extension
+
+CSS 1 (1995)
+
+CSS 2 (1998)
+CSS 2.1 (2004 - 2011) (fix for CSS 2)
+  - recommendation
+  - working draft
+  - candidate recommendation
+
+CSS 3 (Modular)
+  - different modules for different aspects of styling
+  - each module can be versioned, recommended and updated separately
+
+W3C maintains the standards of CSS from the beginning till now.
+
+Vendor prefixes - (to provide vendor implementation of a new standard)
+  moz-
+  webkit-
+  ms-
+  o-
+  Web page will look diff in all these diff browsers
+
+  Finally when the standard becomes stable, we can remove the vendor prefixes
+
+
+https://caniuse.com 
+  - to see which properties are supported in which browsers and up to what degree
+  - global vs local support
+  - which standard will require vendor prefixes and which have become stable standards
+
+
+CSS4 ( latest and living standard )
+  - each module of CSS3 can be upgraded to CSS4 independently
+
+
+  
