@@ -53,28 +53,44 @@ footer {
 }
 
 
-
 /* 
 
   visibility - cannot see the element, but retains the space occupied by the element
             - screen readers also cannot see it
+            - (also all its inner elements)
                 visible (default)
                 hidden
-                collapse (row, rowgroup, col, colgroup)
+                collapse (row, rowgroup, col, colgroup) [TABLES ONLY]
 
   display - 
           none - cannot see; also the original space is occupied by other element
-          >> removes element from the DOM
+          >> removes element from the DOM (also all its inner elements)
+          >> original visual space collapses
 
-        block - takes up full width of the parent
-        inline - takes up only content width; no height or width can be applied
+        block 
+          - takes up full width of the parent
+          - creates new line before and after blocks
+          - height or width can be applied
 
-        inline-block - takes up only necessary width, but width and height can be applied
-          >> responsive box grid
-          FLEXBOX and CSS GRID provide better options
+        inline
+          - takes up only content width; no height or width can be applied
+          - doesn't create new line before and after blocks
+          - treated as a single whole inline element
 
+        inline-block
+          - takes up only necessary width, but width and height can be applied
+          - blocks in the same line, doesn't create new line
+          - height or width can be applied
+
+
+  ACCEPTABLE LAYOUT METHODS
+        >> display: inline-block
+        >> create responsive grid of boxes
+        
+        FLEXBOX and CSS GRID provide better options
 
 */
+
 
 .ninja {
   /* visibility: hidden; */
@@ -89,8 +105,12 @@ footer {
 
   display: inline-block;
   /* grid of boxes - side by side */
+
   width: 32%;
-  /* 30% of parent (<main>) */
+  /* 32% of parent (<main>) [FLUID WIDTH] */
+
   height: 100px;
+  /* min-height: 100px; */
+
 
 }

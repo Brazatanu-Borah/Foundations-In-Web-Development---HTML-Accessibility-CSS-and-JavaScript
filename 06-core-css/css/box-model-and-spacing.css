@@ -52,6 +52,7 @@ footer {
   text-transform: uppercase;
 }
 
+
 .ninja {
 
   border: solid 1px black;
@@ -59,44 +60,65 @@ footer {
   /* display: block; */
   /* display: inline; */
   display: inline-block;
-  width: 22%;
 
+  width: 22%;
   /* box will be at least 100px in width, but will grow wider with more content, but never become narrower than 100px */
   min-width: 100px;
+  
   height: 100px;
 
   margin: 20px;
   padding: 10px 30px;
+  /* this adds to the 22% width of the actual content of the box */
 
-  border: solid 5px red;
+  border: solid 2px red;
+  /* border width of 5px adds to the 22% of the actual content of the box */
   /* border-style: solid; */
   /* border-width: 5px; */
 
-  /* override just the color */
+  /* override just the color from the shorthand notation */
   border-color: green;
+  /* override just the width from the shorthand notation */
+  border-width: 6px;
 
 }
+
 
 .ninja.better {
   min-height: 300px;
   /* box will be at least 300px in height, but will grow taller with more content, but never become shorter than 300px */
 }
 
+
 /* 
-  SPACING of Elements
+  SPACING of Elements (design principle WHITE SPACE)
   ===================
 
     Margin : space outside of the border; negative space between two elements
-    Padding: space from the content up to the inner edge of the border
-      >> padding & margin can be applied on all 4 sides, 3 sides, 2 sides or only on 1 side
+      - horizontal margins add up
+      - vertical margins collapse (bigger one prevails)
 
-    Border : inner/outer edge of the element
-      >> border can be applied on all 4 sides, 3 sides, 2 sides or only on 1 side
+    Padding: space from the content up to the inner edge of the border
+    
+    padding & margin can be applied on all 4 sides, 3 sides, 2 sides or only on 1 side
+      t r b l
+      t r/l b
+      t/b l/r
+      trbl
+
+    Border : inner/outer edge of the element (stroke around the element)
+    - border can be applied on all 4 sides, 3 sides, 2 sides or only on 1 side
+
 
     margin & padding should be in relative units (em, rem, %)
 
+
+    ============= WIDTH AND HEIGHT =====================================
     width  === actual content width (border-width, padding and margin not included)
     height === actual content width (border-width, padding and margin not included)
+
+      Flexbox makes this easier (also factors in the added padding, border and margin)
+        - these are dynamically calculated
 
           width
           min-width (media queries) [EXPAND FREELY WITH MORE CONTENT]
@@ -107,3 +129,8 @@ footer {
             max-height (be careful)
 
 */
+
+* {
+  outline: solid 1px #ccc;
+  /* to visualize the exact bounds of the elements */
+}

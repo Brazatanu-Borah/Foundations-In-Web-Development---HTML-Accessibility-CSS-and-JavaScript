@@ -68,9 +68,29 @@ footer {
 }
 
 
-
 /* IMAGE POSITIONING AROUND BLOCK OF TEXT */
-/* Floats and Flow Roots */
+/* ============================================ */
+/* Floats and Flow Roots
+  - Float container/parent must have a fixed width/height as well as the floated elements
+  - Images already have a intrinsic width and height (no problem)
+  - Other elements we specify the width or height first and then float them
+  - Float images and wrap text around them
+*/
+
+
+.sample-copy {
+  display: flow-root;
+  /* Placed on the parent element of the floated element */
+  /* Keeps the parent and floated child element together */
+  /* 
+    previously we used the :clearfix hack
+    - placing invisible elements
+  
+  */
+
+  border: solid 1px red;
+}
+
 
 #sam-on-couch-img {
   float: right;
@@ -80,10 +100,3 @@ footer {
   width: 30%;
 }
 
-.sample-copy {
-  display: flow-root;
-  /* Placed on the parent element of the floated element */
-  /* Keeps the parent and floated child element together */
-
-  border: solid 1px red;
-}

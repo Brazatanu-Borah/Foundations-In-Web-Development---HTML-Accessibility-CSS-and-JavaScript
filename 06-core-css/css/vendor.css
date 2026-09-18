@@ -1,25 +1,31 @@
-
-
 #sam-on-couch-img {
   width: 30%;
 }
 
+
 /*
+
+  CASCADING AND INHERITANCE AND SPECIFICITY
+  -----------------------------------------
+  Which style will be applied to our elements - what will decide
+
+
   SELECTOR IMPORTANCE
   *******************
 
-          Browser Defaults
-          *
-          Element/Tag selector         (broad selection)
-          Class selector               (group selection)
-          ID selector                  (unique element)
-          Inline style
+      Browser Defaults
+      *
+      Element/Tag selector         (broad selection)
+      Class selector               (group selection)
+      ID selector                  (unique element)
+      Inline style
 
-          !important
+      !important
   
 */
 
 /* 
+
   Specificity Index
   https://specificity.keegan.st
 
@@ -31,13 +37,22 @@
         
         !important   -- 1000000000........ (only in extreme situations)
 
+
+  SPECIFICITY === 'POWER'
+
+  ORDER OF STYLESHEETS ALSO MATTERS IN MATTERS RELATED TO SPECIFICITY
+
+
 */
 
 /* 
+
   EQUAL IMPORTANCE / SPECIFICITY
+  ------------------------------
     Order Wins
 
     In case of identical selectors (equal specificity), styles nearest to the element (or towards the bottom of the css file) wins
+    
 */
 
 /* element selector */
@@ -45,12 +60,12 @@ span {
   font-size: 8px;
 }
 
-/* class selector */
+/* class selector - more specific than element selector */
 .special-class {
   font-size: 20px;
 }
 
-/* more specific than single class */
+/* more specific than single class selector */
 .special-text .special-class {
   font-size: 10px;
 }
@@ -58,6 +73,7 @@ span {
 /* id selector */
 #special-id {
   font-size: 32px;
+  /* this will be overwritten by the external css that comes after this css file */
 }
 
 /* inline styles (42px) 
@@ -67,6 +83,7 @@ span {
 /* !important flag */
 #special-id.special-class {
   /* font-size: 56px !important; */
+  /* this will override even the external css that comes after this css file */
 
   /* only another !important flag on this element later will override this !important */
 }

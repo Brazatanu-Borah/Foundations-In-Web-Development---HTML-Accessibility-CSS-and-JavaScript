@@ -5,11 +5,17 @@
     <title>CSS Demo Project</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-    <!-- <link rel="stylesheet" href="./css/cascading.css"> -->
-    <link rel="stylesheet" href="./css/vendor.css">
+    <!-- <link rel="stylesheet" href="./css/cascading.css" /> -->
+    <link rel="stylesheet" href="./css/vendor.css" />
+    
+    <!-- 
+      All 3rd party css files must be loaded first
+      Then we add our css file, after the vendor css
+      Only then we can override any css properties that occurs in vendor css
+    -->
 
     <!-- Our Custom CSS below vendor/3rd part CSS -->
-    <link rel="stylesheet" href="./css/site.css">
+    <link rel="stylesheet" href="./css/site.css" />
   </head>
 
   <body>
