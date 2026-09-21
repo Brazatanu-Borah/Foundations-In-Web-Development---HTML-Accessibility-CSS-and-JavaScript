@@ -1,0 +1,27 @@
+3rd Party Web hosting
+=====================
+  - normal/regular web hosting
+  - not cloud hosting
+
+Interserver.net
+  Unlimited websites
+  Business Email
+  Subdomains
+
+  Others
+  siteground
+  hostgator etc
+
+For simple static sites or basic interactive sites, not so much for web apps or data heavy sites
+
+Namecheap - Domain Name Registrar
+
+UPLOAD SITE FILES TO WEB HOST
+----------------------------- 
+  FTP (Simple file transfer)
+    - manual upload of website files to the hosting
+    - no version control (for very simple sites)
+  GitHub Repo (CI/CD)
+    - git/github
+    - version control (to fallback to previous version)
+    - psuh to github will update in the web host automatically

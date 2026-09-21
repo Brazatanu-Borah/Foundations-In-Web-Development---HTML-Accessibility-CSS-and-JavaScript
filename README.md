@@ -16,8 +16,8 @@ I will check these off as I complete each section:
 - [x] 04. Core HTML (Building website structure)
 - [x] 05. Web Accessibility (Making sites usable for everyone)
 - [x] 06. Core CSS (Styling and designing websites)
-- [ ] 07. Debugging HTML and CSS (Finding and fixing mistakes)
-- [ ] 08. Deploying a Website (Putting a site live on the internet)
+- [x] 07. Debugging HTML and CSS (Finding and fixing mistakes)
+- [x] 08. Deploying a Website (Putting a site live on the internet)
 - [ ] 09. 🛠️ **Practice Project #1**
 - [ ] 10. Core JavaScript (Adding logic and interaction)
 - [ ] 11. Debugging JavaScript (Fixing broken code)

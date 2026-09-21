@@ -1,0 +1,15 @@
+
+DOCKER vs VIRTUAL MACHINE
+-------------------------
+  containers
+  images of containers
+
+  pass through machine to machine easily
+  easy to deploy apps/websites to the cloud
+  
+  httpd:alpine (mini os + web server)
+
+Docker
+  - very small replica of a specific portion of a machine
+  - very small internal OS
+  - creates a self-contained unit that can be moved effortlessly from one machine to another

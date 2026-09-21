@@ -1,0 +1,20 @@
+Development for me
+Deploy - Give our site to the public (all or selected few)
+
+Store our website files on a server that can be accessed by anyone on the internet
+  index.html
+  style.css
+  script.js
+  images
+
+Deployment method changes where we are deploying our site
+
+To the internet
+To a local network
+
+Some Standard Deployment Option will help us understand other deployment options easily
+
+Host our files in a web server
+
+
+localhost (IP address of every computer)

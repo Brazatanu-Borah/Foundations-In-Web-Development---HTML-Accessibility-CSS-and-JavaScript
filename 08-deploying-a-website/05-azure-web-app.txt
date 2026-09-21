@@ -1,0 +1,10 @@
+
+Deploy to CLOUD
+===============
+  Azure Web Services (and also other)
+  
+  - simpler than most other deployment methods
+  - but costly than shared web hosting (interserver)
+  - mostly for web apps or data heavy websites
+
+  - dply entire docker containers here
