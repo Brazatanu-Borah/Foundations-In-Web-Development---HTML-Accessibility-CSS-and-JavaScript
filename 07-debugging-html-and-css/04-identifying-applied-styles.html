@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>CSS Demo Project</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+
+    <!-- 
+
+        Elements tab's right side pane contains - styles, layout, js events and dom
+
+          1 Style
+          2 Computed
+          3 Layout
+          4 Event listeners
+          5 DOM breakpoints
+          6 Properties
+          7 Accessibility
+
+        'Styles' - ACTUAL APPLIED STYLES
+          >> top styles are the most recent (actually applied), bottom styles are overwritten
+            (opposite of a typical css file)
+            - shows hierarchy of styles
+          >> styles as they are applied are added to the top
+          >> shows where the styles are coming from and also which line
+            - user agent stylesheet
+            - style.css:24
+
+        'Computed' - FINAL COMPUTED STYLES (AS THE ELEMENTS RENDERED ON THE PAGE)
+          >> actual sizes calculated by the browser while rendering
+          >> also listed as total properties not as groups of classes and ids
+          >> list of all properties that are applied on the html element (including fonts)
+
+    -->
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <h1>Our CSS Demo Project</h1>
+
+      <p>
+        <span id="first-character" class="starting-character first-overall-character">L</span>orem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos modi quod minus impedit eius aut temporibus sint ipsum beatae, libero, rerum quos dignissimos dolore? Saepe similique vitae officia odit?
+      </p>
+      <div class="ninja">
+        This is a div
+      </div>
+      <div class="ninja better">
+        This is a div
+      </div>
+      <div class="ninja">
+        This is a div
+      </div>
+      <p class="key-info">
+        This is key info
+      </p>
+
+    </main>
+
+    <footer>
+      &copy;. All Rights Reserved.
+    </footer>
+  </body>
+
+</html>

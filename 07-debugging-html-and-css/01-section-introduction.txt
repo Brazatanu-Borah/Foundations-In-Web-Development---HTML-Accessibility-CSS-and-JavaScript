@@ -1,0 +1,9 @@
+DEBUGGING HTML AND CSS
+----------------------
+
+  Dev tools in our browser
+  Explore our running code
+  Identify how our CSS is being applied
+  How much data we are transferring over to the clients computer/mobile
+  Improve the site's structure and design by 'coding in the browser' directly
+  See how our site will render in other browsers

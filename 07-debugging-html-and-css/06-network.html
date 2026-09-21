@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>CSS Demo Project</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+
+    <!-- 
+
+      Network tab
+      ------------
+        [Preserve log] [Disable cache] [Internet Speed Emulator]
+
+        check website size
+        bandwidth cost 
+          How much does it cost us to get our website to 1 client's browser
+
+
+        The table hase these categories
+        Name   Status   Type   Initiator   Size   Time
+
+          Size - will help us see the largest files till the smallest ones
+            - helps is in tweaking the size of very large files (expensive files)
+
+        At the bottom of the pane
+          10 requests   136 kB transferred  203 kB resources  Finish: 2.02 s  DOMContentLoaded: 1.27 s  Load: 1.98 s
+
+        requests    - no of http/s requests
+        transferred - actual data downloaded (excluding cached resources; only changed resources)
+        resources   - total size of all resources (html css js files, images, icons etc)
+        s/ms        - time to finish loading our site
+
+
+        Cache (beware)
+          speed up our site
+          doesn't download anything that has not changed
+          some newer styles might not update because of cache (frustrating)
+            - we may still see old icons, spacing, layouts etc
+
+            See effect on 4.4kb transferred, Finish: 78 ms, DOMContentLoaded: 57 ms and Load: 70 ms
+          
+          Empty cache and reload
+            Clear out any caching
+
+          *** some sites will be slow 
+            - caching is disabled (every unchanged resource will be downloaded every time the user refreshes the page)
+            (just enable caching) ***
+
+
+    -->
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <h1>Our CSS Demo Project</h1>
+
+      <p>
+        <span id="first-character" class="starting-character first-overall-character">L</span>orem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam eos modi quod minus impedit eius aut temporibus sint ipsum beatae, libero, rerum quos dignissimos dolore? Saepe similique vitae officia odit?
+      </p>
+      <div class="ninja">
+        This is a div
+      </div>
+      <div class="ninja better">
+        This is a div
+      </div>
+      <div class="ninja">
+        This is a div
+      </div>
+      <p class="key-info">
+        This is key info
+      </p>
+
+    </main>
+
+    <footer>
+      &copy;. All Rights Reserved.
+    </footer>
+  </body>
+
+</html>
