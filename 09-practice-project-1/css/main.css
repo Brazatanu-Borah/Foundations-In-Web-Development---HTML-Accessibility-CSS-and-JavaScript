@@ -1,0 +1,159 @@
+/* DESKTOP FIRST LAYOUT (responsive variants later) */
+
+/* 
+  Header Font: Kreon (700)
+    font-family: "Kreon", serif;
+  Text Font: Nunito Sans (300)
+    font-family: "Nunito Sans", sans-serif;
+
+  H1 Font Size - 144px
+  H2 Font Size - 72px
+  Standard Font Size - 36px
+  Header/footer/Subtitle Font Size - 24px
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@700&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;1,6..12,300&display=swap');
+
+html {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300px;
+  /* font-size: 1rem; */
+  font-size: 36px;
+}
+
+/* make the <body> width === width of the hero image and center the <body> element in the center of the canvas (horizontally) */
+body {
+  width: 1440px;
+
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Kreon', serif;
+  font-weight: 700;
+}
+
+h1 {
+  /* font-size: 144px; */
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+h2 {
+  /* font-size: 72px; */
+  font-size: 2rem;
+}
+
+header {
+  background-color: #000000;
+  /* font-size: 24px; */
+  font-size: 0.67rem;
+  text-align: right;
+  padding: 0.4rem;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.3rem;
+}
+
+footer {
+  background-color: #000000;
+  /* font-size: 24px; */
+  font-size: 0.67rem;
+  color: #ffffff;
+  padding: 0.4rem;
+  text-align: center;
+}
+
+.hero-banner {
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+
+.hero-image {
+  max-width: 100%;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* outline: solid red 1px; */
+}
+
+.hero-text h1 {
+  margin: 0;
+  /* line height based on the font size (text height), changing root font size wont affect the line height */
+  line-height: 1em;
+
+  /* to correct the imbalance caused by the letter spacing */
+  text-indent: 1rem;
+}
+
+.hero-text p {
+  margin: 0;
+}
+
+.main-info {
+  text-align: center;
+}
+
+.highlights {
+  display: flow-root;
+
+  /* outline: solid 1px red; */
+}
+
+.highlights .left-image {
+  width: 50%;
+  float: left;
+}
+
+.highlights .right-image {
+  width: 50%;
+  float: right;
+}
+
+.highlights-text {
+  display: inline-block;
+  width: 50%;
+}
+
+h2 {
+  margin: 0;
+}
+
+.highlights-text h2,
+.highlights-text p {
+  padding-left: 0.67rem;
+  padding-right: 0.67rem;
+
+  /* vertical centering of the h2 and p can be done easily using FLEXBOX (later) */
+}
+
+.food-menu {
+  /* padding-left: 2rem; */
+  text-align: center;
+}
+
+.food-items {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.food-items li {
+  margin-bottom: 1rem;
+}

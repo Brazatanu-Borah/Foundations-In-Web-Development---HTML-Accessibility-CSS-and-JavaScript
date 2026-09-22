@@ -1,0 +1,29 @@
+ACTUAL PRODUCTION WEBSITE (multipage)
+=====================================
+  github
+  ci/cd pipeline
+  deploy to web host and access the site from diff devices
+
+  make the next bit
+  push to gihub + ci/cd pipeline
+  check on diff devices
+  ...
+
+  repeat the process
+
+
+
+Deploy
+  - docker image + microsoft azure
+
+
+Evaluation of site
+  - accessibility on all 3 pages
+
+  - network tab (on all 3 pages)
+    >> disable cache
+    3.6 mb (full site)
+    1.6 mb (hero image)
+
+    optimize images
+      - tiny png extension (andreas sanders)
