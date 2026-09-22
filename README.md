@@ -18,7 +18,7 @@ I will check these off as I complete each section:
 - [x] 06. Core CSS (Styling and designing websites)
 - [x] 07. Debugging HTML and CSS (Finding and fixing mistakes)
 - [x] 08. Deploying a Website (Putting a site live on the internet)
-- [ ] 09. 🛠️ **Practice Project #1**
+- [x] 09. 🛠️ **Practice Project #1**
 - [ ] 10. Core JavaScript (Adding logic and interaction)
 - [ ] 11. Debugging JavaScript (Fixing broken code)
 - [ ] 12. JavaScript in The DOM (Connecting script to the webpage)
