@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    
+    <title>Core JavaScript</title>
+  </head>
+
+<body>
+  <h1>Core JavaScript Demo</h1>
+
+
+
+  <script>
+
+    // ARRAY - collection of related values of similar data types
+
+    /*
+
+      Arrays are essentially lists of data
+
+      Naming an array should be the plural of what type of value it contains
+      eg, cars=[], myFriends=[]
+        
+      Counting/Indexing starts from '0' (from the left)
+
+      Arrays of collection on multiple variable=value pairs
+
+          Index ~ variable name
+          Item  ~ variable value
+
+      We can change the values inside of the arrays
+
+      Used everywhere - React, Vue, Tailwind CSS etc
+        - we constantly have to deal with lists of items/data in programming
+        - we use array methods for all those tasks
+
+    */
+
+    //                0      1      2       3
+    const people = ['Tim', 'Sue', 'Bob', 'Mary'];
+
+    console.log(people);
+    console.log(people[1]); // 2nd item in the list
+    console.log(people[4]); /* will give 'undefined' */
+  
+
+    // Add a new item to the array, at the last index [push()]
+    people.push('Greg');
+    console.log(people);
+    console.log(people[4]); // 'Greg'
+
+
+    // Remove an item from the array (last element)   [pop()]
+    people.pop();
+    console.log(people);   // 'Greg' removed
+
+
+    // We can capture an element of an array and store it in a variable (to use later)
+    const lastPerson = people.pop();
+    console.log(lastPerson); // 'Mary' is stored in this variable
+
+
+    // Find the index of a particular element in an array
+    console.log(people.indexOf('Bob')); /* will give '2'; 3rd item in the array */
+    console.log(people.indexOf('Bobby')); /* will give '-1'; not found in the array */
+
+
+    // Check if this object is an array (gives true/false)
+    console.log(Array.isArray(people)); // true
+    console.log(Array.isArray(lastPerson)); // false (this is a variable)
+
+
+    // Check if an item starts with a particular letter (gives true/false)
+    console.log(lastPerson.startsWith('M')); // true (Mary starts with M)
+
+
+    people.push('Tom');
+    people.push('Tammy');
+    people.push('Barry');
+    /*
+      Array will still say 4 items, but in expanded version will show the extra items
+    */
+    
+
+    /***** 2 IMPORTANT ARRAY Methods (Creates a New Array from Original Array)  ******/
+      /* *************************************************************************** */
+
+    // FILTER items in an array [FUNCTION]
+    // Creates a 'NEW ARRAY' with the filtered items)
+          // Used in product galleries, 
+
+      /* Original array items -
+            Tim
+            Sue
+            Bob
+            Tom
+            Tammy
+            Barry
+      */
+
+    const coolPeople = people.filter(function(person){
+
+      return person.startsWith('T') === true; // explicit checking (true === true)
+      // return person.startsWith('T');
+
+      // return !person.startsWith('T') === true; NOT STARTING WITH 'T'
+
+      /*
+        .filter(function) - got called for every item in the list (called 7 times)
+            >> Process in every function call
+              1. we grab the 1st item in array 'Tim'
+              2. pass it into the function
+              3. function checks whether the item starts with 'T' 'Tim.startsWith('T')'
+                > gives 'true' or 'false' [TRUE in this case]
+              4. returns the item 'Tim' (stores in the 'coolPeople' array)
+      */
+
+    });
+
+    console.log(people); // original 7 items
+    console.log(coolPeople); // only 3 items list // new array
+
+ 
+
+              // SUBSTRING (Creates a New String) ===============================
+              // (start-index, no-of-characters-to-include)) [0 based counting]
+              console.log(lastPerson.substr(2,1));
+
+
+
+    // MAP (Similar to FILTER method) ================================
+    // Creates a special relation to each item in the original array
+    /*
+      Mostly used with Objects
+      - we create an array of objects and use map method there
+    */
+
+    const firstLetters = people.map(function(person){
+
+      return person.substr(0, 1);
+      /*
+        - runs this .map(function) 7 times
+        - each time it grabs an item and passes it through the function
+        - each time it extracts the first character of the item string and stores inside it (returns it)
+  
+
+        - we get a new array with exact number of items in the original 
+
+      */
+
+    });
+
+    // A new array with only the' First Letters' of the items in the original array
+    console.log(firstLetters);
+
+
+
+  </script>
+
+</body>
+
+</html>

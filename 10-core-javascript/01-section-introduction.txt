@@ -1,0 +1,4 @@
+JavaScript
+==========
+  power the web with scripting
+  interactive/dynamic web pages and apps

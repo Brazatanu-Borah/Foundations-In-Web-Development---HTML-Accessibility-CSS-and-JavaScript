@@ -1,0 +1,3 @@
+moduel ( auto matically applies 'defer') and executes the js after the HTML page has fully loaded
+
+'defer' - explicitely defers the execution till the HTML page has fully loaded

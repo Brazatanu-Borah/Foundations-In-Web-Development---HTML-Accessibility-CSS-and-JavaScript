@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    
+    <title>Core JavaScript</title>
+  </head>
+
+  <body>
+    <h1>Core JavaScript Demo</h1>
+
+
+
+    <!-- Internal/Embedded JavaScript (using the 'script' tag)
+
+      JavaScript runs on the machine of the user who is using our website
+     
+      - an html element inside which we can write JavaScript code , just like the <style> tag in which we could write CSS code inside the html file itself
+
+      - script must run only after the page has loaded, hence we place the scripts at the end of the html document, just before the ending body tag
+      >> first html loaded, then css applied and last scripts act on those elements
+
+      - browser reads and executes code (renders page) from top to bottom
+
+    -->
+    <script>
+
+      // CTRL + SHIFT + J  open the browser console
+      // must be kept minimum (only use this for debugging or checking if our code is working as intended or not), take these console.logs out before production
+
+      console.log('Hello');
+      // this will run first
+      // 03-internal-javascript.html:30
+
+      console.log('Hello, there again!!');
+      // this will run second
+      // 03-internal-javascript.html:34
+
+    </script>
+
+  </body>
+
+</html>

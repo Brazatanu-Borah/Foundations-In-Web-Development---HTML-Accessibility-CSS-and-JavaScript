@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    
+    <title>Core JavaScript</title>
+  </head>
+
+<body>
+  <h1>Core JavaScript Demo</h1>
+
+
+
+  <script>
+
+    // COMPARISON operators (to check a single condition) -
+    /*
+      ==   (compares only the value)
+      ===  (compares the value & the data type) [ALWAYS USE THIS BY DEFAULT]
+      !=   (compares only the value)
+      !==  (compares the value & the data type)
+    */
+
+    // BOOLEAN OPERATORS
+    /*
+      && - both conditions must be true
+      || - only one condition needs to be true
+
+      Use parenthesis with the correct logical operators
+
+      if ( (lhs && rhs ) ( lhs || rhs ) )
+    */
+
+
+
+    // CONDITIONALS help us to create logic in our application
+    // CONDITIONALS always use comparison operators that either evaluate to 'true' or 'false'
+    /*
+      If this test turns out to be true - DO THIS THING
+      If this test turns out to be false - DO THIS OTHER THING
+
+
+      // IF ELSE statement
+        if (condition/test) {
+          // code to run if condition turns out to be TRUE/is TRUE
+        } else {
+          // code to run if condition turns out to be FALSE     
+        }
+
+
+
+      // IF-ELSE-IF statement
+        if(condition 1){
+          // code
+        } elseif(condition 2){
+          // code
+        } elseif(condition 3){
+          // code
+        } else {
+          // code
+        }
+
+        This is not efficient
+
+        SWITCH STATEMENT
+        =================
+        We have something called a 'SWITCH' statement that is much better solution for this kind of repeated if else if statement
+          >> only when we check only one variable to multiple conditions, and we want a specific output at each check
+
+          Case sensitive variable and value ( be careful )
+          We create diff cases and we do work based on those diff cases
+
+            checkVariable = value;
+            switch (checkVariable) {
+              case value:
+                // code
+                break;
+              case value:
+                // code
+                break;
+            
+              default:
+                // code
+                break;
+            }
+
+
+    */
+
+
+    let firstName = 'John';
+    let lastName = 'Doee';
+    console.log(`Hello ${firstName}`);
+
+    // console.log(firstName); - will always output the firstName. But we want to display the name only if certain condition is met (check first and then decide to display or not to displayu the name)
+
+    if (firstName === 'Tim') {
+      console.log(`Hello ${firstName}`);
+    } else {
+      console.log(`You're not a student`);
+    }
+
+    // Here, it will check multiple conditions and only when the all conditions turns 'true', it outputs the firstName
+    if (firstName.toLowerCase() === 'john' && lastName.toLowerCase() === 'doe') {
+      console.log('Hello, John Doe');
+    } else if (firstName.toLowerCase() === 'john') {
+      console.log('Hello, other John');
+    } else if (lastName.toLowerCase() === 'doe') {
+      console.log('Hello, other doe');
+    } else {
+      console.log('Hello, are you a student?');
+    }
+
+
+    firstName = 'Jane';
+    lastName = 'Doe';
+    let middleName = 'Bummer'
+    // only one side needs to be true for the code to execute
+    if (firstName.toLowerCase() === 'jane' || lastName.toLowerCase() === 'doe') {
+      console.log(`That's a pretty cool name`);
+    }
+
+    if ((firstName.toLowerCase() === 'jane' || lastName.toLowerCase() === 'doe') && middleName.toLowerCase() === 'bummer' ) {
+      console.log(`That's a pretty cool name`);
+    }
+
+
+    const day = 'Tuesday'; // this can be static or user input thru a form
+    // const day = 'Fribsday';
+
+    switch (day.toLowerCase()) {
+
+      case 'monday':
+        console.log('Welcome to the first day of the week');
+        break;
+      case 'tuesday':
+        console.log('I hope your week is going well');
+        break;
+    
+      default:
+        console.log('I have no idea what day it is');
+        break;
+    }
+
+
+  </script>
+
+</body>
+
+</html>

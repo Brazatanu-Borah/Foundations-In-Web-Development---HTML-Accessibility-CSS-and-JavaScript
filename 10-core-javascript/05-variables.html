@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    
+    <title>Core JavaScript</title>
+  </head>
+
+<body>
+  <h1>Core JavaScript Demo</h1>
+
+
+
+  <script>
+    /*
+
+      VARIABLE : container to hold data in computer memory
+        - we get access to that data by referencing the variable name
+
+        >> 'var' & 'let' - keywords
+        >> can be changed later
+        >> js variables are 'untyped' & 'dynamic'
+        >> same variable can hold different 'types' of data
+
+    */
+
+    // DECLARE + ASSIGN VALUE
+
+    // VAR
+    var test = 1;
+    console.log(test);
+
+    var test = 'hello';
+    // modifying the value in the variable (not the variable itself)
+    // JS variables are untyped (we must be careful)
+    console.log(test);
+
+
+    // BIG 3 DATA types in JavaScript - STRING, NUMBER & BOOLEAN ======================
+    var testString = 'this is a string of text';
+    var testNumber = 99;
+    var testBoolean = true;
+
+    // JS guesses the type of the variable by looking at the data inside it, hence it is dynamic and loosely typed
+
+
+    // Even the 'var' KW is optional (Browser will put it itself, NOT RECOMMENDED)
+    testNum = 10;
+    console.log(testNum + testNum);
+
+
+    // LET & CONST
+    /* 
+      Modern JS uses 'let' keyword for variables & 'const' keyword for constants
+
+      'let'   - scoped variable (can reassign value, change the value later)
+      'const' - scoped variable (cannot reassign value; except in Arrays and Objects we can change the values inside the Array or Object not the array or object)
+
+      'scope' - refers to in between '{ }' in JS
+        >> where are the variables located
+
+      ** Always use 'CONST' keyword
+        - except when we are sure that we WILL change the value later use 'LET'
+    */
+
+    // LET
+    let userName = 'John';
+    console.log(userName);
+
+    userName = 'Jill'; /* updating the value / reassign the variable with new value */
+    console.log(userName);
+
+    /*
+      let userInputValue;
+    */
+
+    // CONST
+    const gpa = 3.5; /* must be declared and initialized in the same statement (because it's value must remain identical) */
+    console.log(gpa);
+    /*
+      const url =
+      const api =
+      const mainTitle =
+    */
+
+
+
+    // HOISTING (when using var; creates problem) - when w don't declare variables and just initialize it with a variable
+
+        // var i;
+          // JS hoisted the declaration of var i to the top
+
+        i = 10;
+        /* attaching to the global scope */
+        i = 5;
+        /* attaching to the global scope */
+
+        console.log('hoisted i:', i); // 5
+
+        var i = 2;
+        // declaring the variable here
+
+        console.log('normal i:', i); // 2
+
+    // HOISTING is not allowed when using 'let' and 'const', it will give error when we don't declare variables before trying to access it later
+
+
+    // UNDEFINED (4th Data Type)
+    var j;
+    // Creating the variable but not storing any value in it will give undefined (no value to the variable, hence we will not know)
+
+    console.log(j);
+    j = 2;
+
+
+
+  </script>
+
+</body>
+
+</html>

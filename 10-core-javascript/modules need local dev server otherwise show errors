@@ -1,0 +1,8 @@
+localhost: 127.0,.0.1:5500
+
+    127.0.0.1 - Hotel
+    :5500     - room number
+  
+We cannot load js file swith type module from the hard drive (File Protocol)
+  >> will be blocked by CORS policy
+We have to use a local dev server or online hosting server

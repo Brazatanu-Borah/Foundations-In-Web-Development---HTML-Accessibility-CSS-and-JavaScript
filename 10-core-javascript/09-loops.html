@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    
+    <title>Core JavaScript</title>
+  </head>
+
+<body>
+  <h1>Core JavaScript Demo</h1>
+
+
+
+  <script>
+
+    /*
+      LOOPS - execute a particular code repeatedly until a condition becomes false
+        (GOES EXTREMELY WELL WITH ARRAYS)
+
+    */
+
+    const people = ['Tim', 'Sue', 'Dan', 'Mary', 'Bob'];
+
+    /*
+      FOR loop
+      -------
+
+            for (initialize counter; remain in this condition, increment/decrement counter){
+              // code to run
+            }
+
+            initialize counter === i (mostly)
+
+            Be careful to not create INFINITE LOOP
+
+    */
+
+    for (let i = 0; i < people.length; i++) {
+
+      console.log('FOR ', people[i]);
+      /* this statement (or everything inside the { }) be done for every iteration/loop
+        1. grabs the first item in the array (index 0)
+        2. increments counter
+        3. repeats loop (checks counter condition) if true
+        4. grabs the second item in the array (index 1)
+        ...
+        xx (checks counter condition) i > number of items in the array
+
+      */
+    }
+
+    /* ==========================
+      When we have to know 'where' each item resides in the list
+        - we use counter variable and measure it against the number of items in the array
+        - use standard for loop
+        - in particular cases
+      
+      Most other cases (when we don't care about what item resides at which place/index)
+        - we just have a variable that will store the value at each iteration and either will display it or perform some action on it
+        - use for of loop OR forEach() function
+
+    ============================ */
+
+
+    /*
+      FOR OF loop (improved version of For loop) (no condition check)
+      ------------
+      - simply loops thru the array and does what is intended
+      - we dont have to set counter variable, check condition and then incrfemenet counter
+
+          for (const value of array) {
+            // code to run
+          }
+
+    */
+
+    for (const person of people) {
+
+      console.log('FOR OF ', person);
+
+      /*
+        - just loop thru the 'people' array and put the value taken at each iteration in the constant 'person' and log it to the console
+        - when there is no more items in the array, just exit out of the loop (or stop the loop)
+      */
+
+    }
+
+
+
+    /*
+      FOR EACH loop (Specifically for Arrays) 🌟🌟🌟
+      --------------
+        - loop thru items in an array and do something (perform some function) at each iteration to each item in the array
+
+          people.forEach(function(value){
+            // code to run
+          });
+
+    */
+
+    people.forEach(function (person) {
+
+      console.log('FOREACH ', person);
+
+    });
+
+
+
+    // WHILE LOOP (not necessarily operates on a counter, although it can) 
+    // [BUT WORKS ON A CONDITION, WHILE ITS STILL TRUE]
+    // ONCE THE CONDITION STOPS BEING TRUE THE LOOP STOPS
+    // not only for arrays but other conditions also
+    // =====================================================
+    /*
+
+        while (condition check: true) {
+          // code to run WHILE the condition remain true
+        }
+
+        Be careful to not create INFINITE LOOP
+
+        Use > or < as evaluators in WHILE LOOP
+
+    */
+
+    while (people.length > 0) {
+
+      console.log(people.pop());
+      /*
+        - as ling as the length of the array remain greater than 0, loop will run
+
+        - at each iteration, the code will remove the last item in the array
+
+        - it will keep deleting the last item until there is no item in the array to be deleted (length of the array is no longer > 0, it becomes equal to 0 ), the loop will stop
+          >> at iteration 6 people.length > 0 becomes false
+        
+      */
+
+    }
+
+    console.log(people); // empty array
+
+
+
+
+    // FOR IN - loop thru Objects ➡ in Objects chapter
+
+
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+Before JavaScript, we had static pages
+We loaded the website, we were done
+We want more, new content, we went back to the server to get more
+This is not efficient
+
+They needed a scripting language that could run inside the browser (instead of a server) and provide interactivity to static web pages
+
+JavaScript invented in 1995 by Brendan Eich
+Not related to Java (Sun Micro Systems)
+  - but benefitted off the name 'Java' and its momentum
+
+
+VERSIONS of JavaScript
+  Mocha
+  ActionScript
+  LiveScript
+  JScript (Microsoft's version of ActionScript)
+  JavaScript (started momentum in 2008 - 2010)
+    - with development of AJAX (first in gmail)
+
+
+  jQuery, MooTools, Prototype - eliminated browser differences in implementing JavaScript
+
+  Then we had frameworks of javascript - ember, backbone, react, angular.js etc (for web development [frontend UI and backend])
+
+
+Then standardization also started getting momentum
+
+  ECMAScript 5 ; ES5 - 2009 [Major Revision of Javascript]
+  ECMAScript 6 ; ES6/ES2015 - 2015 [Modern JavaScript]
+    - SPA movement skyrocketed (frameworks got new/better features)
+    - along with HTML5 and CSS3
+
+
+
+MAJOR BROWSERS (in order of birth)
+  NetScape Navigator
+  Microsoft Internet Explorer
+  Mozilla FireFox
+  Google Chrome
+  Microsoft Edge
+

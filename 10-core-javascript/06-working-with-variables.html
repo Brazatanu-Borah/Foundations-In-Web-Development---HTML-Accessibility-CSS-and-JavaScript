@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    
+    <title>Core JavaScript</title>
+  </head>
+
+<body>
+  <h1>Core JavaScript Demo</h1>
+
+
+
+  <script>
+
+    /*
+      OPERATIONS WITH DIFFERENT DATA TYPES
+        number
+        string
+        boolean
+
+        Date() object
+    */
+
+    // NUMBER operations
+    /*********************/
+
+    // Single line declaration of multiple variables is not recommended. (this is the compressed/minified version, do it later)
+    // let a, b, c;
+    // let a = 1, b = 3, c = 6;
+
+
+    // Semicolon - must as a beginner, denotes end of a statement/instruction
+
+
+    // Human Readable Code
+    let x = 1;
+    let y = 2;
+    let result = 0;
+
+    // 01
+    result = x + y;
+    console.log(result); // 3
+
+    // 02
+    // result = result + x ( 3 + 1 )
+    result += x;
+    console.log(result);
+
+    // result = result + y ( 4 + 2 )
+    result += y;
+    console.log(result);
+
+    // 03
+    // result = result + 1; ( 6 + 1 )
+    result++;
+    console.log(result);
+
+    // result = result + 5; ( 7+ 5 )
+    result +=5;
+    console.log(result);
+      // +, -, /, * operate in the same way (MATH OPERATION with these symbols)
+
+
+
+    // BOOLEAN operations (only 2 states - true(1) or false(0))
+    /*********************/
+    // ! - will change the value to its opposite (negation operator)
+
+    let isAlive = true;
+    console.log(isAlive);
+
+    console.log(!isAlive);
+    // we are displaying the opposite value (not changing it)
+
+    isAlive = !true;
+    // we are changing the value to the opposite of the initial value
+
+    console.log(!isAlive);
+
+
+
+    // DATE object (number of milliseconds since January 1st, 1970) (time and date)
+    /*************************************************************/
+    // Declare a birthday (recommended way)
+
+    var birthday = new Date();
+    // current date counted from 1st jan 1970
+    console.log(birthday);
+
+    // date string (not recommended)
+    var birthday = new Date('September 15, 1990');
+    console.log(birthday);
+    var birthday = new Date('15 September, 1990');
+    console.log(birthday);
+
+    // year, month (0-11), date, hours, mins, seconds, milliseconds
+      // Counting starts from 0 in JavaScript
+    var birthday = new Date(1990, 9, 15, 0, 0, 0, 0);
+    console.log(birthday);
+
+    //  DATE METHODS -------------------------
+    console.log(birthday.getFullYear());
+
+    console.log(birthday.getMonth());
+    console.log(birthday.getMonth() + 2);
+
+    console.log(birthday.getDay());
+
+    console.log(birthday.getDate());
+    console.log(birthday.getUTCDate());
+
+    /****** Libraries are much easier to use for specifying date and time
+      - but learn raw JS first to understand the libraries later 
+    *  *****/
+
+
+
+    // STRING operations
+    /*********************/
+    /*
+      JS works with HTML - HTML uses double quotes for attributes and all
+      
+      Hence use single quotes in JS (to not confuse with HTML double quotes)
+        - unless there is a specific reason to use double quote in JS
+    */
+
+    const firstName = 'John';
+    const lastName = 'Doe';
+    const clientAge = 45;
+
+    // string concatenation using empty string and exiting the string and reentering the string
+    console.log('Hello,' + ' ' + firstName + ' ' + lastName);
+    
+    // string interpolation - template literals (we can put variables [or do calculations] inside of a string without exiting the string)
+    console.log( `Hello, ${firstName} ${lastName}. You're ${clientAge + 5}.` );
+
+
+
+
+  </script>
+
+</body>
+
+</html>
